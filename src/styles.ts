@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
 export const cores = {
-  corDeFundo: '#000000',
+  corDeFundo: '',
   corDeFundo1: '#000035',
   corDeFundo3: 'rgb(0, 25, 60, 0.30)',
   corPrimaria: ' #f67828',
