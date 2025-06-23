@@ -1,30 +1,29 @@
 import styled, { createGlobalStyle } from 'styled-components'
 
-export const cores = {
-  corDeFundo: '',
-  corDeFundo1: '#000035',
-  corDeFundo3: 'rgb(0, 25, 60, 0.30)',
-  corPrimaria: ' #f67828',
-  corSecundaria: '#FFFFFF',
-  corDeFundo2: '#003366',
-  corTercearia: '#335b84'
-}
-
 const EstiloGlobal = createGlobalStyle`
-body{
-  background-color: ${cores.corDeFundo};
-  font-family: Gill Sans, sans-serif;
-  @media (max-width: 768px) {
-  padding-top:16px;
+  body {
+    background-color: ${({ theme }) => theme.cores.fundo};
+    color: ${({ theme }) => theme.cores.letra};
+    font-family: Gill Sans, sans-serif;
+
+    @media (max-width: 768px) {
+      padding-top: 16px;
+    }
   }
-}
+  * {
+    transition: 0.3s ease-in-out;
+  }
+  *::selection{
+    background-color: ${({ theme }) => theme.cores.letra};
+    color: ${({ theme }) => theme.cores.fundo};
+  }
 `
 
-export default EstiloGlobal
+export default EstiloGlobal;
 
 export const Container = styled.div`
   @media (max-width: 768px) {
     max-width: 80%;
     display: block;
   }
-`
+`;
