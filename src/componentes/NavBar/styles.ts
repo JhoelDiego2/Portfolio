@@ -54,7 +54,7 @@ export const Circle = styled.span`
     color: white;
     font-size: 3rem;
     border-radius: 100px;
-    background-color: ${props => props.theme.cores.primario};
+    background-color: ${props => props.theme.cores.menu};
     width: 5px;
     height: 5px;
     display: inline-block

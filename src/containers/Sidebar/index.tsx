@@ -47,7 +47,7 @@ export default function Header({ toggleTema }: HeaderProps) {
   }
   return (
     <>
-      <NavBar $isScrolled={isScrolled} >
+      <NavBar $isScrolled={isScrolled} mobileMenuOpen={mobileMenuOpen} setMobileMenuOpen={setMobileMenuOpen} >
         <ButtomTheme onClick={toggleTema} />
       </NavBar>
     </>

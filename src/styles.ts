@@ -12,6 +12,9 @@ const EstiloGlobal = createGlobalStyle`
   }
   * {
     transition: 0.3s ease-in-out;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
   *::selection{
     background-color: ${({ theme }) => theme.cores.letra};

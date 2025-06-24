@@ -25,11 +25,13 @@ const itemVariants = {
 
 type NavBarProps = {
   children?: React.ReactNode;
-  $isScrolled: boolean
+  $isScrolled: boolean;
+  mobileMenuOpen: boolean;
+   setMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 
 };
 
-export default function NavBar({ children, $isScrolled }: NavBarProps) {
+export default function NavBar({ children, $isScrolled, mobileMenuOpen, setMobileMenuOpen}: NavBarProps) {
   return (
     <NavStyled
       as={motion.nav}
@@ -46,13 +48,16 @@ export default function NavBar({ children, $isScrolled }: NavBarProps) {
 
       <UlStyled as={motion.ul}>
         {["Inicio", "Habilidades", "Projetos", 'Idiomas', "Contato"].map((item) => (
-          <LiStyled as={motion.li} key={item} variants={itemVariants}>
+          <LiStyled as={motion.li} key={item} variants={itemVariants} mobileMenuOpen={mobileMenuOpen}>
             {item}
           </LiStyled>
         ))}
         {children} {}
       </UlStyled>
-        <MenuHamburguer />
+        <MenuHamburguer 
+          mobileMenuOpen={mobileMenuOpen}
+          setMobileMenuOpen={setMobileMenuOpen}  
+        />
 
     </NavStyled>
   );
