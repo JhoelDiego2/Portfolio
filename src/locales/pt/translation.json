@@ -4,12 +4,70 @@
     "habilidades": "Habilidades",
     "projetos": "Projetos",
     "idiomas": "Idiomas",
-    "contato": "Contato"
-  }, 
+    "contato": "Contato",
+    "select": "Mais Opções"
+  },
   "hero": {
-    "linha1": "Olá! ",
+    "linha1": "Olá!",
     "linha2": "Sou Jhoel",
     "linha3": "DESENVOLVEDOR FULLSTACK WEB",
-    "linha4": "Especialista em transformar desafios em soluções digitais. Combinando design, lógica e performance para entregar aplicações que realmente funcionam. Porque boas ideias merecem ser bem executadas."
+    "linha4": "Especialista em transformar desafios em soluções digitais. Uno design, lógica e performance para criar aplicações funcionais. Boas ideias merecem execução de qualidade."
+  },
+  "menu_opcoes": {
+    "titulo1": "Tema:",
+    "opcao1": "Claro",
+    "opcao2": "Escuro",
+    "opcao3": "Sistema",
+    "Titulo2": "Idioma:",
+    "opcao4": "Português",
+    "opcao5": "Inglês",
+    "opcao6": "Espanhol"
+  },
+  "Habilidades": {
+    "titulo1": "Pensamento Full Stack",
+    "descicao1": "Conhecimento das camadas frontend e backend, facilitando decisões técnicas e integração entre equipes.",
+    "titulo2": "Metodologias Ágeis",
+    "descicao2": "Experiência com Scrum e Kanban para organizar tarefas, priorizar entregas e atuar de forma iterativa.",
+    "titulo3": "Desenvolvimento Web",
+    "descicao3": "Uso do sistema Client First e boas práticas para criar interfaces modernas e responsivas."
+  },
+  "botoesProjetos": {
+    "botao1": "Ver Imagens",
+    "botao2": "Acessar Site",
+    "botao3": "Ver Código",
+    "botao4": "Saiba Mais"
+  },
+  "ProjetoShadow": {
+    "descicao": "Projeto desenvolvido no primeiro ano da faculdade que promove o fandom de uma série chinesa por meio de jogos interativos, chats e estatísticas personalizadas para os fãs."
+  },
+  "ProjetoLofhel": {
+    "descicao": "Sistema inteligente para monitoramento de vinhos, que controla umidade e temperatura para garantir a conservação ideal durante o armazenamento."
+  },
+  "ProjetoPortfolio": {
+    "descicao": "Portfólio pessoal com apresentação dos meus projetos, habilidades e trajetória como desenvolvedor Full Stack."
+  },
+  "ProjetoCalculadora": {
+    "descicao": "Calculadora temática criada em dupla, capaz de converter números entre diferentes bases numéricas (decimal, binário, hexadecimal e octal), desenvolvida como desafio acadêmico."
+  },
+  "ProjetoChat": {
+    "descicao": "Aplicação de chat integrada à API Gemini, permitindo interação com uma inteligência artificial que responde de forma dinâmica e contextualizada."
+  },
+  "ProjetoSistemaVenda": {
+    "descicao": "Sistema backend para gerenciamento de uma loja fictícia, com funcionalidades para controle de estoque, cadastro de produtos e execução de vendas simuladas."
+  },
+  "contato": {
+    "titulo": "Vamos Trabalhar Juntos!",
+    "botao1": "Meu LinkedIn",
+    "botao2": "Meu Currículo"
+  },
+  "formulario": {
+    "titulo1": "Nome",
+    "placeholder1": "Ex: Luciano",
+    "titulo2": "E-mail",
+    "placeholder2": "Ex: luciano@gmail.com",
+    "titulo3": "Assunto",
+    "placeholder3": "Ex: One Page",
+    "titulo4": "Mensagem",
+    "placeholder4": "Ex: Gostaria de saber mais sobre como posso trabalhar com você no desenvolvimento de uma One Page para o meu negócio."
   }
 }
