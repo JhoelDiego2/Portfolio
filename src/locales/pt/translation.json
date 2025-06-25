@@ -5,5 +5,11 @@
     "projetos": "Projetos",
     "idiomas": "Idiomas",
     "contato": "Contato"
+  }, 
+  "hero": {
+    "linha1": "Olá! ",
+    "linha2": "Sou Jhoel",
+    "linha3": "DESENVOLVEDOR FULLSTACK WEB",
+    "linha4": "Especialista em transformar desafios em soluções digitais. Combinando design, lógica e performance para entregar aplicações que realmente funcionam. Porque boas ideias merecem ser bem executadas."
   }
 }

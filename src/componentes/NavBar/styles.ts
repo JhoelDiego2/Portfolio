@@ -4,25 +4,23 @@ export const NavStyled = styled.nav<NavStyleProps>`
   padding: 15px 30px;
   display: flex;
   align-items: center;
-  font-size: 1.3rem;
-  text-transform: uppercase;
+  font-size: 2rem;
   width: 100%;
-  height: 3vh;
+  height: 8vh;
   position: fixed;
   top: 0;
   left: 0;
-  justify-content: space-around;
+  justify-content: space-evenly;
   backdrop-filter: blur(10px);
   color:  ${props => props.theme.cores.letra};
   box-shadow: ${({$isScrolled}) => ($isScrolled? '1px 1px 10px 1px rgba(0, 0, 0, 0.493);' : 'none')};
   backdrop-filter: ${({$isScrolled}) => ($isScrolled? 'blur(8px)' : 'none')};
-
 `
 
 export const UlStyled = styled.ul`
   display: flex;
   list-style: none;
-  gap: 20px;
+  gap: 3vw;
   margin: 0;
   padding: 0;
   align-items: center;
@@ -30,7 +28,7 @@ export const UlStyled = styled.ul`
 
 export const LiStyled = styled.li`
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.1rem;
   &:after{
       content: '';
       display: block;
@@ -46,7 +44,7 @@ export const LiStyled = styled.li`
     opacity: 1;
 
     }
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 995px) {
   display: none;
 }
 `

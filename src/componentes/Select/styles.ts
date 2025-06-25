@@ -7,4 +7,13 @@ export const Select = styled.select`
     text-transform: uppercase;
     text-decoration: none;
     color: ${props => props.theme.cores.letra};
+    padding: 0vh 10px;
+    cursor: pointer;
+`
+export const Option = styled.option`
+    cursor: pointer;
+
+    &:hover{
+        background-color: black;
+    }
 `

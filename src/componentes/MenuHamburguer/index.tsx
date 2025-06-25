@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import { DivPai, Linha, Menu, Lista, Link } from "./styles";
 import { useTranslation } from "react-i18next";
+const variants = {
+  hidden: { opacity: 0, y: -10 }, // Estado inicial: invisível e deslocado para cima
+  visible: { opacity: 1, y: 0 },  // Estado final: visível e na posição normal
+};
 
 type MenuHamburguerProps = {
   mobileMenuOpen: boolean;
@@ -33,6 +37,10 @@ export default function MenuHamburguer({
         role="button"
         tabIndex={0}
         onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") setMobileMenuOpen(prev => !prev); }}
+          variants={variants}
+        initial="hidden"
+        animate="visible"
+        transition={{ duration: 2 }}
       >
         <Linha as={motion.div} mobileMenuOpen={mobileMenuOpen} />
         <Linha as={motion.div} mobileMenuOpen={mobileMenuOpen} />

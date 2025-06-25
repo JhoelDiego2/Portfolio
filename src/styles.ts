@@ -9,6 +9,9 @@ const EstiloGlobal = createGlobalStyle`
     @media (max-width: 768px) {
       padding-top: 16px;
     }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   * {
     transition: 0.3s ease-in-out;
@@ -26,7 +29,6 @@ export default EstiloGlobal;
 
 export const Container = styled.div`
   @media (max-width: 768px) {
-    max-width: 80%;
-    display: block;
+    max-width: 96%;
   }
 `;

@@ -5,5 +5,11 @@
     "projetos": "Projects",
     "idiomas": "Languages",
     "contato": "Contact"
+  }, 
+  "hero": {
+    "linha1": "Hi! ",
+    "linha2": "I'm Jhoel",
+    "linha3": "FULLSTACK WEB DEVELOPER",
+    "linha4": "Specialist in turning challenges into digital solutions. Combining design, logic, and performance to deliver applications that truly work. Because great ideas deserve to be well executed."
   }
 }
