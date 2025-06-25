@@ -4,8 +4,9 @@ import {
   UlStyled,
   LiStyled, 
   Circle, 
-} from './styles'; // use nomes que indicam que são componentes
+} from './styles';
 import MenuHamburguer from "../MenuHamburguer";
+import { useTranslation } from "react-i18next";
 
 const listVariants = {
   hidden: { opacity: 0, y: -20 },
@@ -27,11 +28,30 @@ type NavBarProps = {
   children?: React.ReactNode;
   $isScrolled: boolean;
   mobileMenuOpen: boolean;
-   setMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
-
+  setMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+  onNavClick: (sectionId: string) => void;
+  activeSection: string;
 };
 
-export default function NavBar({ children, $isScrolled, mobileMenuOpen, setMobileMenuOpen}: NavBarProps) {
+export default function NavBar({
+  children,
+  $isScrolled,
+  mobileMenuOpen,
+  setMobileMenuOpen,
+  onNavClick,
+  activeSection,
+}: NavBarProps) {
+  const { t } = useTranslation();
+
+  // Lista de seções com id (para scroll) e chave de tradução
+  const menuItems = [
+    { id: "inicio", label: t("nav.inicio") },
+    { id: "habilidades", label: t("nav.habilidades") },
+    { id: "projetos", label: t("nav.projetos") },
+    { id: "idiomas", label: t("nav.idiomas") },
+    { id: "contato", label: t("nav.contato") },
+  ];
+
   return (
     <NavStyled
       as={motion.nav}
@@ -42,23 +62,33 @@ export default function NavBar({ children, $isScrolled, mobileMenuOpen, setMobil
     >
       <motion.p initial="hidden" animate="visible" variants={itemVariants}>
         Jhoel
-        <Circle as={motion.span} initial="hidden" animate="visible" variants={itemVariants}>
-        </Circle>
+        <Circle as={motion.span} initial="hidden" animate="visible" variants={itemVariants} />
       </motion.p>
 
       <UlStyled as={motion.ul}>
-        {["Inicio", "Habilidades", "Projetos", 'Idiomas', "Contato"].map((item) => (
-          <LiStyled as={motion.li} key={item} variants={itemVariants} mobileMenuOpen={mobileMenuOpen}>
-            {item}
+        {menuItems.map(({ id, label }) => (
+          <LiStyled
+            as={motion.li}
+            key={id}
+            variants={itemVariants}
+            mobileMenuOpen={mobileMenuOpen}
+            className={activeSection === id ? "active" : ""}
+            onClick={() => {
+              onNavClick(id);
+              setMobileMenuOpen(false);
+            }}
+          >
+            {label}
           </LiStyled>
         ))}
-        {children} {}
+        {children}
       </UlStyled>
-        <MenuHamburguer 
-          mobileMenuOpen={mobileMenuOpen}
-          setMobileMenuOpen={setMobileMenuOpen}  
-        />
 
+    <MenuHamburguer
+      mobileMenuOpen={mobileMenuOpen}
+      setMobileMenuOpen={setMobileMenuOpen}
+      onNavClick={onNavClick}
+    />
     </NavStyled>
   );
 }

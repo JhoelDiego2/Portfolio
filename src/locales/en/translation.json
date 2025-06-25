@@ -1,0 +1,9 @@
+{
+  "nav": {
+    "inicio": "Home",
+    "habilidades": "Skills",
+    "projetos": "Projects",
+    "idiomas": "Languages",
+    "contato": "Contact"
+  }
+}
