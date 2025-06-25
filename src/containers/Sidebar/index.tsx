@@ -3,7 +3,7 @@ import NavBar from "../../componentes/NavBar";
 import ButtomTheme from "../../componentes/ButtomTheme";
 import { SelectLanguage } from "../../componentes/Select";
 import { useTranslation } from 'react-i18next';
-
+import AnimatedSidebar from "../../componentes/Menu";
 type HeaderProps = {
   toggleTema: () => void;
 };
@@ -56,6 +56,7 @@ export default function Header({ toggleTema }: HeaderProps) {
     >
       <ButtomTheme onClick={toggleTema} />
       <SelectLanguage />
+      <AnimatedSidebar />
     </NavBar>
   );
 }

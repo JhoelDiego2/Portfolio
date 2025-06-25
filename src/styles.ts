@@ -18,11 +18,11 @@ const EstiloGlobal = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    user-select: none;
   }
   *::selection{
     background-color: ${({ theme }) => theme.cores.letra};
-    color: ${({ theme }) => theme.cores.fundo};
-  }
+    color: ${({ theme }) => theme.cores.fundo};}
 `
 
 export default EstiloGlobal;

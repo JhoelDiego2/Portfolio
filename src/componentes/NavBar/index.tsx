@@ -8,6 +8,7 @@ import {
 import MenuHamburguer from "../MenuHamburguer";
 import { useTranslation } from "react-i18next";
 
+import { MenuOPtions } from "../MenuOptions";
 const listVariants = {
   hidden: { opacity: 0, y: -20 },
   visible: {
@@ -83,6 +84,9 @@ export default function NavBar({
         ))}
         {children}
       </UlStyled>
+      <MenuOPtions 
+        mobileMenuOpen={mobileMenuOpen}
+      />
 
     <MenuHamburguer
       mobileMenuOpen={mobileMenuOpen}
