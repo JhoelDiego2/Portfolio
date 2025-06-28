@@ -15,6 +15,7 @@ export const NavStyled = styled.nav<NavStyleProps>`
   color:  ${props => props.theme.cores.letra};
   box-shadow: ${({$isScrolled}) => ($isScrolled? '1px 1px 10px 1px rgba(0, 0, 0, 0.493);' : 'none')};
   backdrop-filter: ${({$isScrolled}) => ($isScrolled? 'blur(8px)' : 'none')};
+  z-index: 20;
 `
 
 export const UlStyled = styled.ul`

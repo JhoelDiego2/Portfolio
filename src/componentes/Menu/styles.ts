@@ -15,11 +15,14 @@ export const Container = styled.div<ContainerProps>`
   background-color:   ${({ isOpen }) => (isOpen ? " rgba(0, 0, 0, 0.19);%" : "none")};            
   overflow: hidden;
   top: 0;
-  left: 0;
+  right: 0;
   height: ${({ isOpen }) => (isOpen ? "100%" : "80px")};
   backdrop-filter:  ${({ isOpen }) => (isOpen ? "blur(10px)" : "blur(0px)")};
-  border-radius:  30px;
-  
+  display: none;
+    @media screen and (max-width: 700px) {
+    display: flex;
+
+  }
 `
 
 export const Nav = styled(motion.nav)`
@@ -32,9 +35,10 @@ export const Background = styled(motion.div)`
 background: ${props => props.theme.cores.menu};
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
   bottom: 0;
-  width: 300px;
+  width: 190px;
+  border-radius:  10px;
 `
 
 export const ToggleButton = styled.button`
@@ -43,7 +47,7 @@ export const ToggleButton = styled.button`
   cursor: pointer;
   position: absolute;
   top: 18px;
-  left: 15px;
+  right: 15px;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -57,7 +61,8 @@ export const List = styled(motion.ul)`
   margin: 0;
   position: absolute;
   top: 80px;
-  width: 230px;
+  right: 0;
+  width: 200px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -65,21 +70,15 @@ export const List = styled(motion.ul)`
 `
 
 export const ListItem = styled(motion.li)`
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 0;
-  margin: 0;
+  width: auto;
   list-style: none;
-  margin-bottom: 20px;
   cursor: pointer;
-  
+  font-size: 1.4rem;
 `
 
 
 export const TextPlaceholder = styled.div`
   border-radius: 5px;
-  width: 200px;
   height: 20px;
   flex: 1;
   

@@ -5,7 +5,7 @@ const EstiloGlobal = createGlobalStyle`
     background-color: ${({ theme }) => theme.cores.fundo};
     color: ${({ theme }) => theme.cores.letra};
     font-family: Gill Sans, sans-serif;
-
+    overflow-x: hidden;
     @media (max-width: 768px) {
       padding-top: 16px;
     }
@@ -23,12 +23,15 @@ const EstiloGlobal = createGlobalStyle`
   *::selection{
     background-color: ${({ theme }) => theme.cores.letra};
     color: ${({ theme }) => theme.cores.fundo};}
-`
 
-export default EstiloGlobal;
-
-export const Container = styled.div`
-  @media (max-width: 768px) {
-    max-width: 96%;
+  section{
+    min-height: 100dvb;
+    width: 100vw;
+    font-size: 1.2rem;
+    display: flex;
+    padding-inline: clamp(1rem, 5vw, 6rem);
+    position: relative;
+    flex-wrap: wrap;
   }
-`;
+`
+export default EstiloGlobal

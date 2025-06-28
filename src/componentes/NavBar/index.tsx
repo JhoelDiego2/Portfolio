@@ -5,10 +5,9 @@ import {
   LiStyled, 
   Circle, 
 } from './styles';
-import MenuHamburguer from "../MenuHamburguer";
 import { useTranslation } from "react-i18next";
+import AnimatedSidebar from "../Menu";
 
-import { MenuOPtions } from "../MenuOptions";
 const listVariants = {
   hidden: { opacity: 0, y: -20 },
   visible: {
@@ -84,15 +83,11 @@ export default function NavBar({
         ))}
         {children}
       </UlStyled>
-      <MenuOPtions 
-        mobileMenuOpen={mobileMenuOpen}
-      />
-
-    <MenuHamburguer
-      mobileMenuOpen={mobileMenuOpen}
+      <AnimatedSidebar 
+            mobileMenuOpen={mobileMenuOpen}
       setMobileMenuOpen={setMobileMenuOpen}
-      onNavClick={onNavClick}
-    />
+      onNavClick={onNavClick}/>
+
     </NavStyled>
   );
 }
