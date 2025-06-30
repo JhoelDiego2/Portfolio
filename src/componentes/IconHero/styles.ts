@@ -5,12 +5,21 @@ type NomeIcone = "github" | "linkedin" | "zap";
 interface IconeProps {
   nome: NomeIcone;
 }
+const getIconeURL = (nome: NomeIcone, theme: any) => {
+  return theme.cores[nome] || "";
+};
 
 export const Icone = styled.div<IconeProps>`
-  /* background-image: url(${props => props.theme.cores[props.nome]}); */
-  width: 100px;
-  height: 100px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 3.5rem;
+  height: auto;
+  @media (min-width: 768px) {
+    width: 40px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 94px;
+  }
 `;
