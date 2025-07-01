@@ -15,11 +15,20 @@ export const Icone = styled.div<IconeProps>`
   background-position: center;
   width: 3.5rem;
   height: auto;
+  border-radius: 1000px;
+  backdrop-filter: blur(5px);
   @media (min-width: 768px) {
       width: 4rem;
 
   }
   @media (min-width: 1024px) {
     width: 94px;
+  }
+  &:hover{
+    background: ${props=> props.theme.cores.menu};
+    transform: scale(1.1);
+    backdrop-filter: blur(220px) ;
+    opacity: 0.9;
+
   }
 `;

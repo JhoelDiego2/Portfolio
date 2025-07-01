@@ -4,6 +4,7 @@ import { ThemeProvider } from "styled-components";
 import { light_theme, dark_theme } from "./theme";
 import EstiloGlobal from "./styles";
 import { Inicio } from "./containers/Inicio";
+import { Skills } from "./containers/Skills";
 function App() {
   const [temaClaro, setTemaClaro] = useState(true);
 
@@ -12,6 +13,7 @@ function App() {
       <EstiloGlobal />
         <Header toggleTema={() => setTemaClaro(!temaClaro)} />
         <Inicio />
+        < Skills/>
     </ThemeProvider>
   );
 }

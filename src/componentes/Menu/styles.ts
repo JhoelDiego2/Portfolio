@@ -5,6 +5,7 @@ interface ContainerProps {
   isOpen: boolean;
 }
 export const Container = styled.div<ContainerProps>`
+z-index:21;
   position: fixed;
   display: flex;
   justify-content: flex-start;
@@ -74,6 +75,8 @@ export const ListItem = styled(motion.li)`
   list-style: none;
   cursor: pointer;
   font-size: 1.4rem;
+  color: white;
+
 `
 
 

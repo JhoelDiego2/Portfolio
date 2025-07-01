@@ -1,8 +1,15 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from "styled-components";
 
 const EstiloGlobal = createGlobalStyle`
   body {
-    background: url(${(props) => props.theme.cores.hero});
+      @media (min-width: 1025px) {
+        background: url(${(props) => props.theme.cores.hero});
+        background-repeat: no-repeat;
+    background-size: 2000px 900px;
+    background-position: center 60px;
+    background-color: ${({ theme }) => theme.cores.fundo};
+
+      }
     background-color: ${({ theme }) => theme.cores.fundo};
     color: ${({ theme }) => theme.cores.letra};
     font-family: Gill Sans, sans-serif;
@@ -10,10 +17,6 @@ const EstiloGlobal = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center 60px;
-    
   }
   * {
     transition: 0.3s ease-in-out;
@@ -60,7 +63,7 @@ const EstiloGlobal = createGlobalStyle`
     text-decoration: none;
   }
   ::-webkit-scrollbar {
-    width: 14px;
+    width: 10px;
   }
 
   ::-webkit-scrollbar-track {
@@ -72,5 +75,5 @@ const EstiloGlobal = createGlobalStyle`
       border-radius: 10px;
   }
 
-`
-export default EstiloGlobal
+`;
+export default EstiloGlobal;

@@ -39,7 +39,7 @@ export const LiStyled = styled.li`
       width:10%;
       height: 3px;
       border-radius: 10px;
-      background-color: ${props => props.theme.cores.primario};
+      background-color: ${props => props.theme.cores.menu};
       transition: 0.5s ease-in-out;
       opacity: 0;
   };

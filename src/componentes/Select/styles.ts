@@ -1,6 +1,7 @@
 import styled from "styled-components"
 export const Select = styled.select`
-    background-color:${props => props.theme.cores.fundo};
+    /* background-color:${props => props.theme.cores.fundo}; */
+    background-color: transparent;
     border: none;
     font-size: 1.5rem;
     letter-spacing: 3px ;
@@ -12,6 +13,7 @@ export const Select = styled.select`
 `
 export const Option = styled.option`
     cursor: pointer;
+    background-color: transparent;
 
     &:hover{
         background-color: black;

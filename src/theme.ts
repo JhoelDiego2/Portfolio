@@ -8,6 +8,7 @@ import zap_light from "./assets/svg/zap_light.svg";
 import zap_dark from "./assets/svg/zap_dark.svg";
 import sptech_light from "./assets/img/sptech_light.png";
 import sptech_dark from "./assets/img/sptech_dark.png";
+// import seta_light from "./assets/svg/seta_light.svg";
 
 export const light_theme = {
   cores: {
@@ -16,12 +17,13 @@ export const light_theme = {
     primario: '#0092A7',
     secundario: '#164C51',
     terciario: '#585F6F',
-    menu: 'rgb(156, 230, 240)',
+    menu: 'rgb(11, 130, 146)',
     hero: linesLight,
     sptech: sptech_light,
     linkedin: linkedin_light,
     github: github_light,
-    zap: zap_light
+    zap: zap_light,
+    // seta: seta_light
   }
 };
 
@@ -32,11 +34,12 @@ export const dark_theme = {
     primario: '#0092A7',
     secundario: '#164C51',
     terciario: '#585F6F',
-    menu: 'rgb(20, 78, 83)',
+    menu: 'rgb(38, 221, 197)',
     hero: linesDark,
     sptech: sptech_dark,
     linkedin: linkedin_dark,
     github: github_dark,
-    zap: zap_dark
+    zap: zap_dark,
+    // seta: seta_light
   }
 };

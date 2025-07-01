@@ -1,16 +1,21 @@
 import styled from "styled-components";
 export const Section = styled.section`
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  
   align-items: flex-start;
-  background-size: 100%;
   span {
     display: flex;
     gap: 15px;
   }
   padding-top: 70px;
   min-height: auto;
+  @media (max-width: 1024px) {
+    background: url(${(props) => props.theme.cores.hero});
+    background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  }
 `;
 export const Hero = styled.div`
   display: flex;
@@ -28,7 +33,7 @@ export const Hero = styled.div`
   }
   @media (min-width: 1025px) {
     font-size: clamp(2rem, 5%, 3rem);
-    padding-top: 11%;
+    padding-top: 14%;
   }
 `;
 export const Content = styled.div`
@@ -46,16 +51,6 @@ export const Content = styled.div`
   }
   @media (min-width: 1025px) {
     padding-bottom: 5%;
-  }
-`;
-export const Titulo = styled.p`
-  font-size: ${(props) =>
-    props.titulo ? "clamp(2rem, 4%, 4rem)" : "clamp(1.5rem, 4%, 3rem)"};
-  color: ${(props) => (props.titulo ? props.theme.cores.menu : null)};
-  padding-bottom: ${(props) => (props.titulo ? "2%" : "0px")};
-  @media (min-width: 1440px) {
-    font-size: ${(props) =>
-      props.titulo ? "clamp(4rem, 6%, 5rem)" : "clamp(3rem, 5%, 3rem)"};
   }
 `;
 export const Image = styled.div`
@@ -96,6 +91,7 @@ export const Image = styled.div`
   @media (min-width: 1440px) {
     width: 42%;
   }
+  box-shadow: 7px 5px 10px 2px rgba(0, 0, 0, 0.2);
 `;
 
 export const IconsWrapper = styled.div`
@@ -103,4 +99,33 @@ export const IconsWrapper = styled.div`
   gap: 3%;
   justify-content: center;
   padding-top: 10%;
+`;
+export const Gradiant = styled.div`
+  position: absolute;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(
+  circle,
+  #9BFFA5 29%,
+  #AED3FF 47%,
+  #C9D4EF 55%,
+  #D798E1 66%,
+  #CACFFA 82%
+);
+filter: blur(200px);
+z-index: -1;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+`
+
+
+export const StytledDiv = styled.div`
+  width: 15%;
+  height: 15%;
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  transform: rotate(20deg);
 `;
