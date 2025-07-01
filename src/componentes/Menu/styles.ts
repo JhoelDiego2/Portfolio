@@ -19,7 +19,7 @@ export const Container = styled.div<ContainerProps>`
   height: ${({ isOpen }) => (isOpen ? "100%" : "80px")};
   backdrop-filter:  ${({ isOpen }) => (isOpen ? "blur(10px)" : "blur(0px)")};
   display: none;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 995px) {
     display: flex;
 
   }

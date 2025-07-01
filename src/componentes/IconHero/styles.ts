@@ -16,9 +16,9 @@ export const Icone = styled.div<IconeProps>`
   width: 3.5rem;
   height: auto;
   @media (min-width: 768px) {
-    width: 40px;
-  }
+      width: 4rem;
 
+  }
   @media (min-width: 1024px) {
     width: 94px;
   }

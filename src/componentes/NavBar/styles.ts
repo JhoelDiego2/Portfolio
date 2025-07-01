@@ -16,7 +16,6 @@ export const NavStyled = styled.nav<NavStyleProps>`
   box-shadow: ${({$isScrolled}) => ($isScrolled? '1px 1px 10px 1px rgba(0, 0, 0, 0.493);' : 'none')};
   backdrop-filter: ${({$isScrolled}) => ($isScrolled? 'blur(8px)' : 'none')};
   z-index: 20;
-  background-color: black;
   p{
     font-size: 2rem;
   }

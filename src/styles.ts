@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from 'styled-components'
 
 const EstiloGlobal = createGlobalStyle`
   body {
+    background: url(${(props) => props.theme.cores.hero});
     background-color: ${({ theme }) => theme.cores.fundo};
     color: ${({ theme }) => theme.cores.letra};
     font-family: Gill Sans, sans-serif;
@@ -9,6 +10,10 @@ const EstiloGlobal = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center 60px;
+    
   }
   * {
     transition: 0.3s ease-in-out;
@@ -32,12 +37,24 @@ const EstiloGlobal = createGlobalStyle`
     flex-wrap: wrap;
     justify-content: center;
     max-width: 1440px;
+  @media (min-width: 1024px) {
+    padding-inline: 0vw;
+    max-width: 1024px;
+  }
     @media (min-width: 1440px) {
-      max-height: 854px;
+    max-height: 854px;
+    max-width: 1440px;
+    width: 1440px;
+
     }
   };
   p{
     font-size: clamp(1rem, 4%, 3rem);
+  }
+  @media (min-width: 1440px) {
+  p{
+    font-size: clamp(1.5rem, 4%, 3rem);
+  }
   }
   a{
     text-decoration: none;
