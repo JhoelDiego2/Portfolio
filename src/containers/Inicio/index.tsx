@@ -1,32 +1,52 @@
 import { Traducao } from "../../componentes/Traducao";
-import { Titulo, Hero, Image, Section, IconsWrapper } from "./styles";
+import { Hero, Image, Content, IconsWrapper, Section, Gradiant, StytledDiv, Seta } from "./styles";
 import { IconeHero } from "../../componentes/IconHero";
-
+import jhoel from "../../assets/img/jhoel_sem_fundo.png";
+import { Typewriter } from "../../componentes/Typewriter";
+import { Flutuante } from "../../componentes/flutuante";
+import { Circle } from "../../componentes/NavBar/styles";
+import { Background } from "../../componentes/Menu/styles";
+import { TituloSub } from "../../componentes/Titulo";
 export function Inicio() {
   return (
     <Section>
       <Hero>
-        <Titulo>
-          <Traducao tKey="hero.linha1" />
-        </Titulo>
-        <Titulo>
-          <Traducao tKey="hero.linha2" />
-        </Titulo>
-        <Titulo>
-          <Traducao tKey="hero.linha3" />
-        </Titulo>
-        <p>
-          <Traducao tKey="hero.linha4" />
-        </p>
+        <Gradiant />
+        <Content>
+          <span>
+            <TituloSub titulo={false}>
+              <Traducao tKey="hero.linha1" />
+            </TituloSub>
+            <TituloSub titulo={false}>
+              <Traducao tKey="hero.linha2" />
+              <Circle />
+            </TituloSub>
+          </span>
+          <TituloSub titulo={true}>
+            <Typewriter text="hero.linha3"/> 
+          </TituloSub>
+          <p>
+            <Traducao tKey="hero.linha4" />
+          </p>
+          <IconsWrapper>
+            <IconeHero nome="github" links="https://github.com/JhoelDiego2"/>
+            <IconeHero nome="linkedin"links="https://www.linkedin.com/in/jhoeldiego" />
+            <IconeHero nome="zap" links="wa.link/z8gp33"/>
+            <IconeHero nome="github" links="https://github.com/JhoelDiego2"/>
+          </IconsWrapper>
+        </Content>
 
-        <IconsWrapper>
-          <IconeHero nome="github" />
-          <IconeHero nome="linkedin" />
-          <IconeHero nome="zap" />
-        </IconsWrapper>
+        <Image>
+          <StytledDiv>
+            <Flutuante circle={false} filter={false}/>
+          </StytledDiv>
+          <img src={jhoel} alt="Foto do Jhoel" />
+
+          <Flutuante circle={true} filter={true}/>
+        </Image>
       </Hero>
+              {/* <Seta/> */}
 
-      <Image />
     </Section>
   );
 }

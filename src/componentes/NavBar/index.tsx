@@ -61,7 +61,7 @@ export default function NavBar({
       $isScrolled={$isScrolled}
     >
       <motion.p initial="hidden" animate="visible" variants={itemVariants}>
-        Jhoel
+        Jhoel 
         <Circle as={motion.span} initial="hidden" animate="visible" variants={itemVariants} />
       </motion.p>
 

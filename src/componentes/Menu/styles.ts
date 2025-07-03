@@ -5,6 +5,7 @@ interface ContainerProps {
   isOpen: boolean;
 }
 export const Container = styled.div<ContainerProps>`
+z-index:21;
   position: fixed;
   display: flex;
   justify-content: flex-start;
@@ -19,7 +20,7 @@ export const Container = styled.div<ContainerProps>`
   height: ${({ isOpen }) => (isOpen ? "100%" : "80px")};
   backdrop-filter:  ${({ isOpen }) => (isOpen ? "blur(10px)" : "blur(0px)")};
   display: none;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 995px) {
     display: flex;
 
   }
@@ -48,8 +49,8 @@ export const ToggleButton = styled.button`
   position: absolute;
   top: 18px;
   right: 15px;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: transparent;
   color: white;
@@ -74,6 +75,8 @@ export const ListItem = styled(motion.li)`
   list-style: none;
   cursor: pointer;
   font-size: 1.4rem;
+  color: white;
+
 `
 
 

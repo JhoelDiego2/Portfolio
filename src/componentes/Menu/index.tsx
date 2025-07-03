@@ -35,7 +35,7 @@ const sidebarVariants = {
     transition: { type: "spring", stiffness: 20, restDelta: 2 }
   }),
   closed: {
-    clipPath: "circle(30px at calc(100% - 40px) 40px)",
+    clipPath: "circle(25px at calc(100% - 35px) 35px)",
     transition: { type: "spring", stiffness: 400, damping: 40 }
   },
 }

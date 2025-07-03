@@ -6,7 +6,7 @@ export const NavStyled = styled.nav<NavStyleProps>`
   align-items: center;
   font-size: 2rem;
   width: 100%;
-  height: 8vh;
+  height:70px;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,6 +16,9 @@ export const NavStyled = styled.nav<NavStyleProps>`
   box-shadow: ${({$isScrolled}) => ($isScrolled? '1px 1px 10px 1px rgba(0, 0, 0, 0.493);' : 'none')};
   backdrop-filter: ${({$isScrolled}) => ($isScrolled? 'blur(8px)' : 'none')};
   z-index: 20;
+  p{
+    font-size: 2rem;
+  }
 `
 
 export const UlStyled = styled.ul`
@@ -36,7 +39,7 @@ export const LiStyled = styled.li`
       width:10%;
       height: 3px;
       border-radius: 10px;
-      background-color: ${props => props.theme.cores.primario};
+      background-color: ${props => props.theme.cores.menu};
       transition: 0.5s ease-in-out;
       opacity: 0;
   };
@@ -51,10 +54,9 @@ export const LiStyled = styled.li`
 `
 export const Circle = styled.span`
     color: white;
-    font-size: 3rem;
     border-radius: 100px;
     background-color: ${props => props.theme.cores.menu};
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
     display: inline-block
 `
