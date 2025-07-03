@@ -25,11 +25,11 @@
   },
   "Habilidades": {
     "titulo1": "Full Stack Thinking",
-    "descicao1": "Understanding of frontend and backend layers, enabling technical decisions and team integration.",
+    "descricao1": "Understanding of frontend and backend layers, enabling technical decisions and team integration.",
     "titulo2": "Agile Methodologies",
-    "descicao2": "Experience with Scrum and Kanban to organize tasks, prioritize deliveries, and work iteratively.",
+    "descricao2": "Experience with Scrum and Kanban to organize tasks, prioritize deliveries, and work iteratively.",
     "titulo3": "Web Development",
-    "descicao3": "Use of Client First system and best practices to build modern and responsive interfaces."
+    "descricao3": "Use of Client First system and best practices to build modern and responsive interfaces."
   },
   "botoesProjetos": {
     "botao1": "View Images",
@@ -38,22 +38,22 @@
     "botao4": "Learn More"
   },
   "ProjetoShadow": {
-    "descicao": "Project developed during the first year of college that promotes the fandom of a Chinese series through interactive games, chats, and customized statistics for fans."
+    "descricao": "Project developed during the first year of college that promotes the fandom of a Chinese series through interactive games, chats, and customized statistics for fans."
   },
   "ProjetoLofhel": {
-    "descicao": "Smart system for wine storage monitoring, controlling humidity and temperature to ensure ideal preservation."
+    "descricao": "Smart system for wine storage monitoring, controlling humidity and temperature to ensure ideal preservation."
   },
   "ProjetoPortfolio": {
-    "descicao": "Personal portfolio showcasing my projects, skills, and journey as a Full Stack Developer."
+    "descricao": "Personal portfolio showcasing my projects, skills, and journey as a Full Stack Developer."
   },
   "ProjetoCalculadora": {
-    "descicao": "Themed calculator developed in pairs, capable of converting numbers between different numerical bases (decimal, binary, hexadecimal, and octal), created as an academic challenge."
+    "descricao": "Themed calculator developed in pairs, capable of converting numbers between different numerical bases (decimal, binary, hexadecimal, and octal), created as an academic challenge."
   },
   "ProjetoChat": {
-    "descicao": "Chat application integrated with the Gemini API, allowing interaction with an AI that responds dynamically and contextually."
+    "descricao": "Chat application integrated with the Gemini API, allowing interaction with an AI that responds dynamically and contextually."
   },
   "ProjetoSistemaVenda": {
-    "descicao": "Backend system for managing a fictional store, with features for inventory control, product registration, and simulated sales."
+    "descricao": "Backend system for managing a fictional store, with features for inventory control, product registration, and simulated sales."
   },
   "contato": {
     "titulo": "Let's Work Together!",

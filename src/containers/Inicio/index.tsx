@@ -14,15 +14,14 @@ export function Inicio() {
         <Gradiant />
         <Content>
           <span>
-            <TituloSub titulo={false}>
+            <TituloSub titulo={false} justify="flex-start">
               <Traducao tKey="hero.linha1" />
-            </TituloSub>
-            <TituloSub titulo={false}>
+                 &nbsp;&nbsp;&nbsp;
               <Traducao tKey="hero.linha2" />
               <Circle />
             </TituloSub>
           </span>
-          <TituloSub titulo={true}>
+          <TituloSub titulo={true} justify="flex-start">
             <Typewriter text="hero.linha3"/> 
           </TituloSub>
           <p>

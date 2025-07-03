@@ -13,7 +13,7 @@ function App() {
       <EstiloGlobal />
         <Header toggleTema={() => setTemaClaro(!temaClaro)} />
         <Inicio />
-        < Skills/>
+        <Skills/>
     </ThemeProvider>
   );
 }
