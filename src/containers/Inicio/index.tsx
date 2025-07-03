@@ -3,10 +3,9 @@ import { Hero, Image, Content, IconsWrapper, Section, Gradiant, StytledDiv, Seta
 import { IconeHero } from "../../componentes/IconHero";
 import jhoel from "../../assets/img/jhoel_sem_fundo.png";
 import { Typewriter } from "../../componentes/Typewriter";
-import { Flutuante } from "../../componentes/flutuante";
 import { Circle } from "../../componentes/NavBar/styles";
-import { Background } from "../../componentes/Menu/styles";
 import { TituloSub } from "../../componentes/Titulo";
+import { Flutuante } from "../../componentes/Flutuante";
 export function Inicio() {
   return (
     <Section>

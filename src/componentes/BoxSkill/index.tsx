@@ -1,7 +1,7 @@
 import { Traducao } from "../../componentes/Traducao";
 import { TituloSub } from "../../componentes/Titulo";
 import { Box, DivStyled } from "./styles";
-import { Flutuante } from "../flutuante";
+import { Flutuante } from "../Flutuante";
 interface BoxSkillProps{
     numero: number;
     titulo: string;
