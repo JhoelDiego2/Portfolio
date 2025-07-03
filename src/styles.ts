@@ -2,6 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 const EstiloGlobal = createGlobalStyle`
   body {
+    /* width: 100vw; */
       @media (min-width: 1025px) {
         background: url(${(props) => props.theme.cores.hero});
         background-repeat: no-repeat;
@@ -31,13 +32,14 @@ const EstiloGlobal = createGlobalStyle`
   }
 
   section{
-    min-height: 100dvb;
+    /* min-height: 100dvb; */
     width: 100vw;
     font-size: 1.2rem;
     display: flex;
+    flex-direction: column;
     padding-inline: clamp(1rem, 5vw, 6rem);
     position: relative;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     max-width: 1440px;
   @media (min-width: 1024px) {
@@ -74,6 +76,8 @@ const EstiloGlobal = createGlobalStyle`
      background-color: ${({ theme }) => theme.cores.menu}; 
       border-radius: 10px;
   }
-
+  #habilidades{
+    display: none;
+  }
 `;
 export default EstiloGlobal;

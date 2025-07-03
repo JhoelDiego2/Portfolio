@@ -3,10 +3,9 @@ import { Hero, Image, Content, IconsWrapper, Section, Gradiant, StytledDiv, Seta
 import { IconeHero } from "../../componentes/IconHero";
 import jhoel from "../../assets/img/jhoel_sem_fundo.png";
 import { Typewriter } from "../../componentes/Typewriter";
-import { Flutuante } from "../../componentes/flutuante";
 import { Circle } from "../../componentes/NavBar/styles";
-import { Background } from "../../componentes/Menu/styles";
 import { TituloSub } from "../../componentes/Titulo";
+import { Flutuante } from "../../componentes/Flutuante";
 export function Inicio() {
   return (
     <Section>
@@ -14,15 +13,14 @@ export function Inicio() {
         <Gradiant />
         <Content>
           <span>
-            <TituloSub titulo={false}>
+            <TituloSub titulo={false} justify="flex-start">
               <Traducao tKey="hero.linha1" />
-            </TituloSub>
-            <TituloSub titulo={false}>
+                 &nbsp;&nbsp;&nbsp;
               <Traducao tKey="hero.linha2" />
               <Circle />
             </TituloSub>
           </span>
-          <TituloSub titulo={true}>
+          <TituloSub titulo={true} justify="flex-start">
             <Typewriter text="hero.linha3"/> 
           </TituloSub>
           <p>

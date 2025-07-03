@@ -1,9 +1,4 @@
-import {
-  motion,
-  type MotionValue,
-  useScroll,
-  useTransform,
-} from "motion/react";
+import { motion, useScroll, useTransform, type MotionValue } from "framer-motion";
 import { useRef } from "react";
 
 import { Floating_element, Inner_circulo } from "./styles";

@@ -25,11 +25,11 @@
   },
   "Habilidades": {
     "titulo1": "Pensamiento Full Stack",
-    "descicao1": "Conocimiento de las capas frontend y backend, facilitando decisiones técnicas e integración entre equipos.",
+    "descricao1": "Conocimiento de las capas frontend y backend, facilitando decisiones técnicas e integración entre equipos.",
     "titulo2": "Metodologías Ágiles",
-    "descicao2": "Experiencia con Scrum y Kanban para organizar tareas, priorizar entregas y trabajar de forma iterativa.",
+    "descricao2": "Experiencia con Scrum y Kanban para organizar tareas, priorizar entregas y trabajar de forma iterativa.",
     "titulo3": "Desarrollo Web",
-    "descicao3": "Uso del sistema Client First y buenas prácticas para construir interfaces modernas y responsivas."
+    "descricao3": "Uso del sistema Client First y buenas prácticas para construir interfaces modernas y responsivas."
   },
   "botoesProjetos": {
     "botao1": "Ver Imágenes",
@@ -38,22 +38,22 @@
     "botao4": "Saber Más"
   },
   "ProjetoShadow": {
-    "descicao": "Proyecto desarrollado en el primer año de universidad que promueve el fandom de una serie china mediante juegos interactivos, chats y estadísticas personalizadas para los fans."
+    "descricao": "Proyecto desarrollado en el primer año de universidad que promueve el fandom de una serie china mediante juegos interactivos, chats y estadísticas personalizadas para los fans."
   },
   "ProjetoLofhel": {
-    "descicao": "Sistema inteligente para monitorear el almacenamiento de vino, controlando la humedad y la temperatura para asegurar una conservación ideal."
+    "descricao": "Sistema inteligente para monitorear el almacenamiento de vino, controlando la humedad y la temperatura para asegurar una conservación ideal."
   },
   "ProjetoPortfolio": {
-    "descicao": "Portafolio personal con una presentación de mis proyectos, habilidades y trayectoria como desarrollador Full Stack."
+    "descricao": "Portafolio personal con una presentación de mis proyectos, habilidades y trayectoria como desarrollador Full Stack."
   },
   "ProjetoCalculadora": {
-    "descicao": "Calculadora temática creada en pareja, capaz de convertir números entre distintas bases numéricas (decimal, binaria, hexadecimal y octal), desarrollada como reto académico."
+    "descricao": "Calculadora temática creada en pareja, capaz de convertir números entre distintas bases numéricas (decimal, binaria, hexadecimal y octal), desarrollada como reto académico."
   },
   "ProjetoChat": {
-    "descicao": "Aplicación de chat integrada con la API Gemini, que permite interactuar con una inteligencia artificial que responde de forma dinámica y contextualizada."
+    "descricao": "Aplicación de chat integrada con la API Gemini, que permite interactuar con una inteligencia artificial que responde de forma dinámica y contextualizada."
   },
   "ProjetoSistemaVenda": {
-    "descicao": "Sistema backend para la gestión de una tienda ficticia, con funcionalidades para el control de inventario, registro de productos y ventas simuladas."
+    "descricao": "Sistema backend para la gestión de una tienda ficticia, con funcionalidades para el control de inventario, registro de productos y ventas simuladas."
   },
   "contato": {
     "titulo": "¡Trabajemos Juntos!",

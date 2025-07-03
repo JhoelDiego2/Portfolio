@@ -13,6 +13,7 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "axios": "^1.9.0",
+    "framer-motion": "^12.23.0",
     "i18next": "^23.11.5",
     "i18next-browser-languagedetector": "^7.0.1",
     "motion": "",
