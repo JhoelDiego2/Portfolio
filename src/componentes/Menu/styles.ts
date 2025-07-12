@@ -11,13 +11,12 @@ z-index:21;
   justify-content: flex-start;
   align-items: stretch;
   flex: 1;
-  width: ${({ isOpen }) => (isOpen ? "100%" : "80px")};
-  max-width: 100%;
+  width: ${({ isOpen }) => (isOpen ? "100vw" : "80px")};
   background-color:   ${({ isOpen }) => (isOpen ? " rgba(0, 0, 0, 0.19);%" : "none")};            
   overflow: hidden;
   top: 0;
   right: 0;
-  height: ${({ isOpen }) => (isOpen ? "100%" : "80px")};
+  height: ${({ isOpen }) => (isOpen ? "100vh" : "80px")};
   backdrop-filter:  ${({ isOpen }) => (isOpen ? "blur(10px)" : "blur(0px)")};
   display: none;
     @media screen and (max-width: 995px) {

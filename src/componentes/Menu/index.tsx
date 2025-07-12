@@ -24,7 +24,7 @@ const itemVariants = {
     transition: { y: { stiffness: 1000, velocity: -100 } }
   },
   closed: {
-    y: 50, opacity: 0,
+    y: 100, opacity: 0,
     transition: { y: { stiffness: 1000 } }
   },
 }

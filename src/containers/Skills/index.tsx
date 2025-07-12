@@ -7,7 +7,7 @@ import { Container } from "./styles";
 export function Skills() {
   return (
     <section id="habilidades" >
-      <TituloSub titulo={false} justify="center">
+      <TituloSub titulo={true} justify="center">
         <Traducao tKey="nav.habilidades" />
       </TituloSub>
       <Container>

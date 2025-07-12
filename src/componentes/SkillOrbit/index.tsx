@@ -45,13 +45,13 @@ export function SkillOrbit() {
     <OrbitContainer>
       <Central src={jsIcon} />
       <Circle >
-        <Elements lista={icons_first} tamanho={490}/>
+        <Elements lista={icons_first} tamanho={255}/>
       </Circle>
       <Circle >
-        <Elements lista={icons_second} tamanho={260}/>
+        <Elements lista={icons_second} tamanho={165}/>
       </Circle>
       <Circle >
-        <Elements lista={icons_third} tamanho={120}/>
+        <Elements lista={icons_third} tamanho={100}/>
       </Circle>
     </OrbitContainer>
   );

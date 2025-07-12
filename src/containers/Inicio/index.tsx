@@ -8,7 +8,7 @@ import { TituloSub } from "../../componentes/Titulo";
 import { Flutuante } from "../../componentes/Flutuante";
 export function Inicio() {
   return (
-    <Section>
+    <Section id="inicio">
       <Hero>
         <Gradiant />
         <Content>
@@ -43,7 +43,6 @@ export function Inicio() {
           <Flutuante circle={true} filter={true}/>
         </Image>
       </Hero>
-              {/* <Seta/> */}
 
     </Section>
   );

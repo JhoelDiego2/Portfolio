@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 export const NavStyled = styled.nav<NavStyleProps>`
-  padding: 15px 30px;
+  /* padding: 15px 30px; */
   display: flex;
   align-items: center;
   font-size: 2rem;
-  width: 100%;
+  width: 100vw;
   height:70px;
   position: fixed;
   top: 0;
@@ -13,12 +13,13 @@ export const NavStyled = styled.nav<NavStyleProps>`
   justify-content: space-evenly;
   backdrop-filter: blur(10px);
   color:  ${props => props.theme.cores.letra};
-  box-shadow: ${({$isScrolled}) => ($isScrolled? '1px 1px 10px 1px rgba(0, 0, 0, 0.493);' : 'none')};
-  backdrop-filter: ${({$isScrolled}) => ($isScrolled? 'blur(8px)' : 'none')};
+  background-color: ${({$isScrolled}) => ($isScrolled? props => props.theme.cores.fundo: 'none')};
+  backdrop-filter: ${({$isScrolled}) => ($isScrolled? 'blur(20px)' : 'none')};
   z-index: 20;
   p{
     font-size: 2rem;
   }
+  box-shadow: ${({$isScrolled}) => ($isScrolled? '1px 1px 10px 1px rgba(0, 0, 0, 0.493);' : 'none')};
 `
 
 export const UlStyled = styled.ul`
