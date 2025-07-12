@@ -1,44 +1,99 @@
-
 import * as motion from "motion/react-client"
+import { Traducao } from "../../componentes/Traducao";
 import type { Variants } from "motion/react"
-import { CardContainer, Container, Splash, FruitName, CardContent, FruitInfo, FruitDescription, Card, FruitEmoji } from "./styles"
+import {
+  CardContainer,
+  Container,
+  Splash,
+  CardContent,
+  ProjectInfo,
+  ProjectTitle,
+  ProjectDescription,
+  ProjectImage,
+  Tag,
+  ButtonGroup,
+  Button,
+  Card,
+} from "./styles"
 
-export default function ScrollTriggered() {
+interface CardProps {
+  photo: string
+  projectName: string
+  description: string
+  url: string
+  repository: string
+  tags?: string[] 
+}
+
+export default function ScrollTriggered({
+  photo,
+  projectName,
+  description,
+  url,
+  repository,
+//   album,
+  tags = ["Javascript", "CSS"], 
+}: CardProps) {
   return (
     <Container>
-      {food.map(([emoji, fruitName, description], i) => (
-        <CardComponent i={i} emoji={emoji} fruitName={fruitName} description={description} key={emoji} />
-      ))}
+      <CardComponent
+        photo={photo}
+        projectName={projectName}
+        description={description}
+        url={url}
+        repository={repository}
+        // album={album}
+        tags={tags}
+      />
     </Container>
   )
 }
 
-interface CardProps {
-  emoji: string
-  fruitName: string
-  description: string
-  i: number
-}
-
-function CardComponent({ emoji, fruitName, description, i }: CardProps) {
+function CardComponent({
+  photo,
+  projectName,
+  description,
+  url,
+  repository,
+//   album,
+  tags,
+}: CardProps & { tags: string[] }) {
   return (
     <CardContainer
-    as={motion.div}
-      className={`card-container-${i}`}
+      as={motion.div}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ amount: 0.8 }}
     >
       <Splash />
       <CardContent>
-        <FruitInfo>
-          <FruitName>{fruitName}</FruitName>
-          <FruitDescription>{description}</FruitDescription>
-        </FruitInfo>
-        <Card as={motion.div} variants={cardVariants} className="card">
-          <FruitEmoji>{emoji}</FruitEmoji>
-        </Card>
+        <ProjectInfo>
+          <ProjectTitle>{projectName}</ProjectTitle>
+
+          <div>
+            {tags.map((tag) => (
+              <Tag key={tag}>{tag}</Tag>
+            ))}
+          </div>
+
+          <ProjectDescription>
+            <Traducao tKey={description}/>
+
+          </ProjectDescription>
+
+          <ButtonGroup>
+            {/* <Button href={album} target="_blank">Ver imagens ↗</Button> */}
+            <Button href={url} target="_blank">Acessar site ↗</Button>
+            <Button href={repository} target="_blank" className="secondary">
+              Acessar Repositório ↗
+            </Button>
+          </ButtonGroup>
+        </ProjectInfo>
+
       </CardContent>
+        <Card as={motion.div} variants={cardVariants}>
+          <ProjectImage src={photo} alt={`Imagem do projeto ${projectName}`} />
+        </Card>
     </CardContainer>
   )
 }
@@ -57,22 +112,3 @@ const cardVariants: Variants = {
     },
   },
 }
-
-/**
- * ==============   Data   ================
- */
-
-const food: [string, string, string][] = [
-  ["🍅", "Tomate", "Rico em licopeno e vitamina C, excelente para a saúde cardiovascular e proteção antioxidante."],
-  ["🍊", "Laranja", "Fonte abundante de vitamina C e fibras, fortalece o sistema imunológico e melhora a digestão."],
-  ["🍋", "Limão", "Alto teor de vitamina C e propriedades alcalinizantes, ideal para desintoxicação e digestão."],
-  ["🍐", "Pêra", "Rica em fibras e potássio, promove a saúde digestiva e ajuda no controle da pressão arterial."],
-  ["🍏", "Maçã", "Contém pectina e antioxidantes, auxilia na redução do colesterol e melhora a saúde intestinal."],
-  ["🫐", "Mirtilo", "Superfruta rica em antioxidantes e vitamina K, protege o cérebro e melhora a memória."],
-  ["🍆", "Berinjela", "Fonte de fibras e nasunina, ajuda na redução do colesterol e proteção cardiovascular."],
-  [
-    "🍇",
-    "Uva",
-    "Rica em resveratrol e antioxidantes, promove a saúde do coração e tem propriedades anti-inflamatórias.",
-  ],
-]

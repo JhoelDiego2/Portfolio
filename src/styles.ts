@@ -55,7 +55,7 @@ const EstiloGlobal = createGlobalStyle`
   }
     @media (min-width: 1440px) {
     min-height: 920px;
-    max-height: 854px;
+    /* max-height: 854px; */
     max-width: 1440px;
     width: 1440px;
 justify-content: flex-start;
@@ -63,12 +63,9 @@ justify-content: flex-start;
   };
   p{
     font-size: clamp(1rem, 4%, 3rem);
+    font-size: 16px;
   }
-  @media (min-width: 1440px) {
-  p{
-    font-size: clamp(1.5rem, 4%, 3rem);
-  }
-  }
+
   a{
     text-decoration: none;
   }

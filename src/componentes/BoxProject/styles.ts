@@ -1,9 +1,9 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
-  margin: 100px auto;
+  margin: 0px auto;
   max-width: 1000px;
-  padding-bottom: 100px;
+  /* padding-bottom: 100px; */
   width: 100%;
 `
 
@@ -15,15 +15,19 @@ export const CardContainer = styled.div`
   position: relative;
   padding-top: 20px;
   margin-bottom: 40px;
+  gap: 40px;
+  min-height: 440px;
+  flex-wrap: wrap;
+
 `
 
 export const Splash = styled.div`
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(306deg, #22c55e, #16a34a);
+  background: linear-gradient(306deg,  #565e59ae, #0fbab2ff);
   border-radius: 20px;
 `
 
@@ -33,48 +37,100 @@ export const CardContent = styled.div`
   gap: 40px;
   z-index: 10;
   position: relative;
+  flex-wrap: wrap; 
+  justify-content: center;
+  padding: 30px 10px;
 `
 
-export const FruitInfo = styled.div`
+export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
   min-width: 250px;
+  max-width: 400px;
+  div{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: red;
+    width: 100%;
+    justify-content: center;
+    row-gap: 10px;
+  }
 `
 
-export const FruitName = styled.div`
-  font-size: 48px;
-  font-weight: 600;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+export const ProjectTitle = styled.h2`
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937; /* slate-800 */
+
+  width: 100%;
+  text-align: center;
 `
 
-export const FruitDescription = styled.div`
+export const ProjectDescription = styled.p`
   font-size: 16px;
+  line-height: 1.5;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.4;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  color: #374151; /* slate-700 */
+
 `
 
-export const Card = styled.div`
-  font-size: 164px;
-  width: 600px;
-  height: 530px;
+export const Tag = styled.span`
+  display: inline-block;
+  padding: 4px 12px;
+  margin-right: 8px;
+  border-radius: 10px;
+  background-color: #f3f4f6; /* gray-100 */
+  color: #111827; /* gray-900 */
+  font-size: 14px;
+  font-weight: 500;
+`
+
+export const ProjectImage = styled.img`
+  width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+`
+
+export const ButtonGroup = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  background: var(--white);
-  box-shadow: 
-    0 0 1px hsl(0deg 0% 0% / 0.075),
-    0 0 2px hsl(0deg 0% 0% / 0.075),
-    0 0 4px hsl(0deg 0% 0% / 0.075),
-    0 0 8px hsl(0deg 0% 0% / 0.075),
-    0 0 16px hsl(0deg 0% 0% / 0.075);
-  transform-origin: 50% 50%;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
 `
 
-export const FruitEmoji = styled.div`
-  font-size: 164px;
+export const Button = styled.a`
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  background-color: #0ea5e9; /* sky-500 */
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #0284c7; /* sky-600 */
+  }
+
+  &.secondary {
+    background-color: #4b5563; /* gray-600 */
+
+    &:hover {
+      background-color: #374151; /* gray-700 */
+    }
+  }
+`
+export const Card = styled.div`
+  width: 400px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  img:hover {
+    transform: scale(1.02);
+  };
+  height: 520px;
 `

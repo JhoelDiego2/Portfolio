@@ -38,22 +38,22 @@
     "botao4": "Saber Más"
   },
   "ProjetoShadow": {
-    "descricao": "Proyecto desarrollado en el primer año de universidad que promueve el fandom de una serie china mediante juegos interactivos, chats y estadísticas personalizadas para los fans."
+    "descricao": "Una experiencia inmersiva creada para fanáticos apasionados. Inspirado en una serie china, este proyecto combina juegos interactivos, chats en tiempo real y dashboards personalizados, aumentando el compromiso entre los usuarios. Desarrollado como un desafío académico multidisciplinario, aplicando conocimientos en Front-end (CSS), Back-end (Node.js), Base de Datos (MySQL) y Diseño UX/UI. Más que una entrega académica, fue una oportunidad para liderar ideas creativas, resolver problemas reales y crear conexiones significativas a través de la tecnología."
   },
   "ProjetoLofhel": {
-    "descricao": "Sistema inteligente para monitorear el almacenamiento de vino, controlando la humedad y la temperatura para asegurar una conservación ideal."
+    "descricao": "Sistema inteligente de monitoreo de vinos que utiliza sensores IoT para supervisar la humedad y la temperatura en tiempo real, garantizando la conservación óptima del producto durante el almacenamiento. La solución fue desarrollada con enfoque en automatización, Internet de las Cosas (IoT) y eficiencia energética, utilizando Arduino, sensores DHT11, dashboards con gráficos (Chart.js) y base de datos para historial."
   },
   "ProjetoPortfolio": {
-    "descricao": "Portafolio personal con una presentación de mis proyectos, habilidades y trayectoria como desarrollador Full Stack."
+    "descricao": "Sitio desarrollado para presentar mi trayectoria profesional, proyectos prácticos y habilidades técnicas como desarrollador Full Stack. Con diseño responsivo, interfaz moderna y foco en la experiencia del usuario, el proyecto es también una vitrina de mis decisiones técnicas y creativas. Construido con React, styled-components, React Router y conceptos de SEO básico, responsividad y accesibilidad."
   },
   "ProjetoCalculadora": {
-    "descricao": "Calculadora temática creada en pareja, capaz de convertir números entre distintas bases numéricas (decimal, binaria, hexadecimal y octal), desarrollada como reto académico."
+    "descricao": "Aplicación web que convierte números entre las bases decimal, binaria, hexadecimal y octal. Desarrollada en dupla como desafío académico para reforzar lógica de programación, manejo de entradas y diseño limpio para facilitar su uso. Utilizando JavaScript puro, con enfoque en estructura condicional, validación de datos y modularización de funciones."
   },
   "ProjetoChat": {
-    "descricao": "Aplicación de chat integrada con la API Gemini, que permite interactuar con una inteligencia artificial que responde de forma dinámica y contextualizada."
+    "descricao": "Aplicación de chat conectada a la API Gemini, que permite interacciones con una inteligencia artificial capaz de interpretar el contexto y responder de manera dinámica y fluida. Proyecto enfocado en integración de APIs, consumo de datos asíncronos (fetch/axios), experiencia del usuario y comunicación natural con IA."
   },
   "ProjetoSistemaVenda": {
-    "descricao": "Sistema backend para la gestión de una tienda ficticia, con funcionalidades para el control de inventario, registro de productos y ventas simuladas."
+    "descricao": "Sistema de ventas desarrollado en Python, con interfaz gráfica hecha en Tkinter y base de datos SQL. Permite registro de productos, control de inventario y ejecución de ventas, aplicando lógica de negocio sólida y operaciones CRUD completas. El proyecto destaca buenas prácticas en organización de código, manejo eficiente de datos y creación de una interfaz simple y funcional para entorno de escritorio."
   },
   "contato": {
     "titulo": "¡Trabajemos Juntos!",
