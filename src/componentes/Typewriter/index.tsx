@@ -13,7 +13,7 @@ export function Typewriter({ text, speed = 50 }: TypewriterProps) {
 
   useEffect(() => {
     setDisplayedText(""); 
-    let i = -1;
+    let i = 0;
     const interval = setInterval(() => {
       setDisplayedText((prev) => prev + texto[i]);
       i++;

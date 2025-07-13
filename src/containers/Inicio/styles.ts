@@ -5,19 +5,25 @@ export const Section = styled.section`
     display: flex;
     gap: 15px;
   }
-  padding-top: 70px;
+  padding-top: 120px;
   
   min-height: auto;
     justify-content: center;
-  
+    @media (min-width: 480px) {
+  padding-top: 70px;
 
+    }
+@media (max-width: 800px)  {
+    min-height: 100dvh;
+  
+}
   @media (max-width: 1024px) {
     background: url(${(props) => props.theme.cores.hero});
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-size: 100%;
-    min-height: 100dvh;
+    min-height: 800px;
 
   }
    @media (min-width: 1000px) {

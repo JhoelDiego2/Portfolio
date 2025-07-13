@@ -11,6 +11,7 @@ export const NavStyled = styled.nav<NavStyleProps>`
   top: 0;
   left: 0;
   justify-content: space-evenly;
+  /* justify-content: center; */
   backdrop-filter: blur(10px);
   color:  ${props => props.theme.cores.letra};
   background-color: ${({$isScrolled}) => ($isScrolled? props => props.theme.cores.fundo: 'none')};
@@ -59,5 +60,5 @@ export const Circle = styled.span`
     background-color: ${props => props.theme.cores.menu};
     width: 7px;
     height: 7px;
-    display: inline-block
+    display: inline-block;
 `

@@ -4,7 +4,10 @@ export const Container = styled.div`
   margin: 0px auto;
   /* padding-bottom: 100px; */
   width: 100%;
+  @media (min-width: 800px) {
     padding-inline: clamp(1rem, 5vw, 6rem);
+  
+  }
 
 `
 
@@ -16,21 +19,35 @@ export const CardContainer = styled.div`
   position: relative;
   padding-top: 20px;
   margin-bottom: 40px;
-  gap: 35px;
-  min-height: 440px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   padding: 0 5px;
   align-items: flex-end;
+    gap: 15px;
+
+  @media (min-width: 1000px) {
+    
+    gap: 35px;
+    min-height: 440px;
+  }
 `
 
 export const Splash = styled.div`
   position: absolute;
-  top: 140px;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   background: linear-gradient(306deg,  #3d413edc 30%, #0fbab2ff 100%);
+  background: linear-gradient(306deg,  #3d413e28 30%, #62d2ccff 100%);
   border-radius: 20px;
+      @media (min-width: 900px) {
+  top: 80px;
+
+      }
+            @media (min-width: 1000px) {
+  top: 140px;
+
+      }
 `
 
 export const CardContent = styled.div`
@@ -41,22 +58,33 @@ export const CardContent = styled.div`
   position: relative;
   flex-wrap: wrap; 
   justify-content: center;
-  padding: 70px 20px;
+  padding: 10px 10px;
+  /* width: 100%; */
+  /* background-color: green; */
+  @media (min-width: 1000px) {
+    
+    padding: 70px 20px;
+}
 `
 
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-  min-width: 250px;
-  max-width: 400px;
+  width: 100%;
   div{
     display: flex;
     flex-wrap: wrap;
-    background-color: red;
+    /* background-color: red; */
     width: 100%;
     justify-content: center;
     row-gap: 10px;
+  }
+  @media (min-width: 900px) {
+  max-width: 300px;
+  }
+    @media (min-width: 1000px) {
+  max-width: 400px;
   }
 `
 
@@ -110,38 +138,52 @@ export const Button = styled.a`
   border-radius: 8px;
   text-decoration: none;
   color: white;
-  background-color: #0ea5e9; /* sky-500 */
+  background-color: #0ea5e9;
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #0284c7; /* sky-600 */
+    background-color: #0284c7; 
   }
 
   &.secondary {
-    background-color: #4b5563; /* gray-600 */
+    background-color: #4b5563; 
 
     &:hover {
-      background-color: #374151; /* gray-700 */
+      background-color: #374151;
     }
   }
 `
 export const Card = styled.div`
-  width: 400px;
+  width: 95%;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.65);
   transition: transform 0.3s ease;
   img:hover {
-    transform: scale(1.02);
+    transform: scale(1.02) ;
+
   };
-  height: 630px;
+  img{
+  width: 100%;
+  }
+  @media (max-width: 393px) {
+    height: 400px;
+    /* display: flex; */
+  }
+
   background-color: black;
+  @media (min-width: 687px) {
+  width: 400px;
+    
+    height: 630px;
+  }
 `
 export const CardMobile = styled.div`
   width: 200px;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.65);
+
   transition: transform 0.3s ease;
   img{
     width: 200px;
@@ -152,4 +194,14 @@ export const CardMobile = styled.div`
   height: 630px;
   background-color: black;
   overflow: hidden;
+  display: none;
+    @media (min-width: 695px) {
+    display: block;
+  }
+    @media (min-width: 900px) {
+    display: none;
+  }
+      @media (min-width: 1000px) {
+    display: block;
+  }
 `
