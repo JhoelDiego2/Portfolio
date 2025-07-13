@@ -38,7 +38,7 @@
     "botao4": "Saiba Mais"
   },
   "ProjetoShadow": {
-    "descricao": "Uma experiência imersiva criada para fãs apaixonados! Inspirado em uma série chinesa, este projeto combina jogos interativos, chats em tempo real e dashboards personalizados, aumentando o engajamento entre usuários. Desenvolvido como desafio acadêmico multidisciplinar, aplicando conhecimentos em Front-end (Css), Back-end (Node.js), Banco de Dados (MySQL) e UX/UI Design. Mais do que uma entrega acadêmica, foi uma oportunidade de liderar ideias criativas, resolver problemas reais e criar conexões significativas através da tecnologia."
+    "descricao": "Uma experiência imersiva criada para fãs apaixonados! Inspirado em uma série chinesa, este projeto combina jogos interativos, chats em tempo real e dashboards personalizados, aumentando o engajamento entre usuários. Desenvolvido como desafio acadêmico multidisciplinar, aplicando conhecimentos em Front-end (Css), Back-end (Node.js), Banco de Dados (MySQL) e UX/UI Design."
   },
   "ProjetoLofhel": {
     "descricao": "Sistema inteligente de monitoramento de vinhos que utiliza sensores IoT para acompanhar umidade e temperatura em tempo real, garantindo a conservação ideal do produto durante o armazenamento. A solução foi desenvolvida com foco em automação, Internet das Coisas (IoT) e eficiência energética, utilizando Arduino, sensores DHT11, Dashboards com gráficos (Chart.js) e banco de dados para histórico."
@@ -54,6 +54,9 @@
   },
   "ProjetoSistemaVenda": {
     "descricao": "Sistema de vendas desenvolvido em Python, com interface gráfica feita em Tkinter e banco de dados SQL. Permite cadastro de produtos, controle de estoque e execução de vendas, aplicando lógica de negócio sólida e operações CRUD completas. O projeto destaca boas práticas em organização de código, manipulação eficiente de dados e criação de uma interface simples e funcional para ambiente desktop."
+  },
+  "ProjetoPonny": {
+    "descricao": "Projeto desenvolvido em dupla utilizando a metodologia de Pair Programming, com foco em colaboração ágil e alternância de papéis entre programador e copiloto. A aplicação simula uma corrida de pôneis com temática lúdica inspirada em 'My Little Pony', integrando funcionalidades como cadastro de ponnies, sistema de apostas, histórico de voltas e alertas personalizados."
   },
   "contato": {
     "titulo": "Vamos Trabalhar Juntos!",

@@ -14,10 +14,12 @@ import {
   ButtonGroup,
   Button,
   Card,
+  CardMobile,
 } from "./styles"
 
 interface CardProps {
   photo: string
+  photo_mobile: string
   projectName: string
   description: string
   url: string
@@ -27,6 +29,7 @@ interface CardProps {
 
 export default function ScrollTriggered({
   photo,
+  photo_mobile,
   projectName,
   description,
   url,
@@ -38,6 +41,7 @@ export default function ScrollTriggered({
     <Container>
       <CardComponent
         photo={photo}
+        photo_mobile={photo_mobile}
         projectName={projectName}
         description={description}
         url={url}
@@ -51,6 +55,7 @@ export default function ScrollTriggered({
 
 function CardComponent({
   photo,
+  photo_mobile,
   projectName,
   description,
   url,
@@ -94,6 +99,10 @@ function CardComponent({
         <Card as={motion.div} variants={cardVariants}>
           <ProjectImage src={photo} alt={`Imagem do projeto ${projectName}`} />
         </Card>
+        <CardMobile as={motion.div} variants={cardVariantsMobile}>
+          <ProjectImage src={photo_mobile} alt={`Imagem do projeto ${projectName}`} />
+
+        </CardMobile>
     </CardContainer>
   )
 }
@@ -104,6 +113,20 @@ const cardVariants: Variants = {
   },
   onscreen: {
     y: 50,
+    rotate: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 0.3,
+    },
+  },
+}
+const cardVariantsMobile: Variants = {
+  offscreen: {
+    y: 300,
+  },
+  onscreen: {
+    y: 100,
     rotate: 0,
     transition: {
       type: "spring",

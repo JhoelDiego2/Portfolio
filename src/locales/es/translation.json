@@ -38,7 +38,7 @@
     "botao4": "Saber Más"
   },
   "ProjetoShadow": {
-    "descricao": "Una experiencia inmersiva creada para fanáticos apasionados. Inspirado en una serie china, este proyecto combina juegos interactivos, chats en tiempo real y dashboards personalizados, aumentando el compromiso entre los usuarios. Desarrollado como un desafío académico multidisciplinario, aplicando conocimientos en Front-end (CSS), Back-end (Node.js), Base de Datos (MySQL) y Diseño UX/UI. Más que una entrega académica, fue una oportunidad para liderar ideas creativas, resolver problemas reales y crear conexiones significativas a través de la tecnología."
+    "descricao": "Una experiencia inmersiva creada para fanáticos apasionados. Inspirado en una serie china, este proyecto combina juegos interactivos, chats en tiempo real y dashboards personalizados, aumentando el compromiso entre los usuarios. Desarrollado como un desafío académico multidisciplinario, aplicando conocimientos en Front-end (CSS), Back-end (Node.js), Base de Datos (MySQL) y Diseño UX/UI."
   },
   "ProjetoLofhel": {
     "descricao": "Sistema inteligente de monitoreo de vinos que utiliza sensores IoT para supervisar la humedad y la temperatura en tiempo real, garantizando la conservación óptima del producto durante el almacenamiento. La solución fue desarrollada con enfoque en automatización, Internet de las Cosas (IoT) y eficiencia energética, utilizando Arduino, sensores DHT11, dashboards con gráficos (Chart.js) y base de datos para historial."
@@ -54,6 +54,9 @@
   },
   "ProjetoSistemaVenda": {
     "descricao": "Sistema de ventas desarrollado en Python, con interfaz gráfica hecha en Tkinter y base de datos SQL. Permite registro de productos, control de inventario y ejecución de ventas, aplicando lógica de negocio sólida y operaciones CRUD completas. El proyecto destaca buenas prácticas en organización de código, manejo eficiente de datos y creación de una interfaz simple y funcional para entorno de escritorio."
+  },
+    "ProjetoPonny": {
+   "descripcion": "Proyecto desarrollado en pareja utilizando la metodología de Pair Programming, con enfoque en colaboración ágil y rotación de roles entre programador y copiloto. La aplicación simula una carrera de ponis con temática lúdica inspirada en 'My Little Pony', integrando funcionalidades como registro de usuarios, sistema de apuestas, historial de vueltas y alertas personalizadas."
   },
   "contato": {
     "titulo": "¡Trabajemos Juntos!",

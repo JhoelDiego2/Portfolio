@@ -38,7 +38,7 @@
     "botao4": "Learn More"
   },
   "ProjetoShadow": {
-    "descricao": "An immersive experience created for passionate fans! Inspired by a Chinese series, this project combines interactive games, real-time chats, and personalized dashboards, increasing user engagement. Developed as a multidisciplinary academic challenge, applying knowledge in Front-end (CSS), Back-end (Node.js), Database (MySQL), and UX/UI Design. More than an academic submission, it was an opportunity to lead creative ideas, solve real problems, and create meaningful connections through technology."
+    "descricao": "An immersive experience created for passionate fans! Inspired by a Chinese series, this project combines interactive games, real-time chats, and personalized dashboards, increasing user engagement. Developed as a multidisciplinary academic challenge, applying knowledge in Front-end (CSS), Back-end (Node.js), Database (MySQL), and UX/UI Design."
   },
   "ProjetoLofhel": {
     "descricao": "Intelligent wine monitoring system that uses IoT sensors to track humidity and temperature in real-time, ensuring optimal product preservation during storage. The solution was developed focusing on automation, Internet of Things (IoT), and energy efficiency, using Arduino, DHT11 sensors, dashboards with charts (Chart.js), and a database for historical data."
@@ -54,6 +54,9 @@
   },
   "ProjetoSistemaVenda": {
     "descricao": "Sales system developed in Python, with graphical interface made in Tkinter and SQL database. Allows product registration, inventory control, and sales execution, applying solid business logic and complete CRUD operations. The project highlights best practices in code organization, efficient data handling, and creation of a simple and functional desktop interface."
+  },
+    "ProjetoPonny": {
+"description": "Project developed in a pair using the Pair Programming methodology, focusing on agile collaboration and role switching between driver and navigator. The application simulates a pony race with a playful theme inspired by 'My Little Pony', integrating features such as user registration, betting system, lap history, and custom alerts."
   },
   "contato": {
     "titulo": "Let's Work Together!",
