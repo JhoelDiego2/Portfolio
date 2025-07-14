@@ -1,8 +1,6 @@
-
 # 📁 Portfólio Pessoal
 
 Este é meu **portfólio pessoal** desenvolvido com **React** e **TypeScript**, com o objetivo de apresentar meus projetos, habilidades e trajetória na área de tecnologia de forma clara, organizada e profissional.
-
 
 <div align="center"> <img src="https://i.imgur.com/fXbedBY.png" width="700"/> </div>
 <div align="center" >
@@ -19,31 +17,37 @@ Este é meu **portfólio pessoal** desenvolvido com **React** e **TypeScript**, 
 ## 🕹️ Demonstração
 
 - 🎨 **Protótipo no Figma:**  
-[🔗 Acessar Protótipo](https://www.figma.com/design/MLQWwhG2FCJJnytvv0FiQf/portifolio?node-id=0-1&t=BmltNiyvqk4enRPn-1)
-
+  [🔗 Acessar Protótipo](https://www.figma.com/design/MLQWwhG2FCJJnytvv0FiQf/portifolio?node-id=0-1&t=BmltNiyvqk4enRPn-1)
 
 ---
 
 ## 🚩 Seções do Portfólio
 
 ### 👨‍💻 Sobre Mim
+
 Breve apresentação pessoal, destacando minha formação, objetivos profissionais e principais interesses na área de tecnologia.
 
 ### 🛠️ Habilidades
+
 Lista das principais tecnologias, ferramentas e metodologias com as quais tenho experiência, incluindo:
-- React, TypeScript, JavaScript, Python 
+
+- React, TypeScript, JavaScript, Python
 - HTML5, CSS3, Tailwind, Styled-Components
 - Figma, Git, GitHub
 - Metodologias ágeis (Scrum, Kanban)
 
 ### 📁 Projetos
+
 Exibição de projetos desenvolvidos, com:
+
 - Título e descrição
 - Tecnologias utilizadas
 - Link para repositório (GitHub), demo e galeria de fotos
 
 ### 📞 Contato
+
 Seção com formulário funcional e links para redes sociais:
+
 - LinkedIn
 - GitHub
 - E-mail
@@ -68,19 +72,20 @@ Seção com formulário funcional e links para redes sociais:
 
 ## 🚀 Tecnologias Utilizadas
 
-| Categoria        | Ferramentas                         |
-|------------------|-------------------------------------|
-| **Front-End**    | React, TypeScript, Vite             |
-| **Estilo**       | Styled-Components     |
-| **Design**       | Figma e Canva                        |
-| **Versionamento**| Git, GitHub                         |
-| **Dev Tools**    | VS Code, Node.js                    |
+| Categoria         | Ferramentas             |
+| ----------------- | ----------------------- |
+| **Front-End**     | React, TypeScript, Vite |
+| **Estilo**        | Styled-Components       |
+| **Design**        | Figma e Canva           |
+| **Versionamento** | Git, GitHub             |
+| **Dev Tools**     | VS Code, Node.js        |
 
 ---
 
 ## ▶️ Como rodar localmente
 
 ### Pré-requisitos:
+
 - Node.js instalado
 - Navegador atualizado
 
@@ -97,6 +102,3 @@ npm run dev
 
 Desenvolvido por Jhoel Diego Mamani Mita.  
 Este projeto faz parte de um estudo de front-end e design narrativo.
-
-
-

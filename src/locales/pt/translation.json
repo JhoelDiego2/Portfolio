@@ -10,7 +10,7 @@
   "hero": {
     "linha1": "Olá!",
     "linha2": "Sou Jhoel",
-    "linha3": "DESENVOLVEDOR FULLSTACK WEB",
+    "linha3": "_DESENVOLVEDOR FULLSTACK WEB",
     "linha4": "Especialista em transformar desafios em soluções digitais. Uno design, lógica e performance para criar aplicações funcionais. Boas ideias merecem execução de qualidade."
   },
   "menu_opcoes": {
@@ -38,22 +38,25 @@
     "botao4": "Saiba Mais"
   },
   "ProjetoShadow": {
-    "descricao": "Projeto desenvolvido no primeiro ano da faculdade que promove o fandom de uma série chinesa por meio de jogos interativos, chats e estatísticas personalizadas para os fãs."
+    "descricao": "Uma experiência imersiva criada para fãs apaixonados! Inspirado em uma série chinesa, este projeto combina jogos interativos, chats em tempo real e dashboards personalizados, aumentando o engajamento entre usuários. Desenvolvido como desafio acadêmico multidisciplinar, aplicando conhecimentos em Front-end (Css), Back-end (Node.js), Banco de Dados (MySQL) e UX/UI Design."
   },
   "ProjetoLofhel": {
-    "descricao": "Sistema inteligente para monitoramento de vinhos, que controla umidade e temperatura para garantir a conservação ideal durante o armazenamento."
+    "descricao": "Sistema inteligente de monitoramento de vinhos que utiliza sensores IoT para acompanhar umidade e temperatura em tempo real, garantindo a conservação ideal do produto durante o armazenamento. A solução foi desenvolvida com foco em automação, Internet das Coisas (IoT) e eficiência energética, utilizando Arduino, sensores DHT11, Dashboards com gráficos (Chart.js) e banco de dados para histórico."
   },
   "ProjetoPortfolio": {
-    "descricao": "Portfólio pessoal com apresentação dos meus projetos, habilidades e trajetória como desenvolvedor Full Stack."
+    "descricao": "Site desenvolvido para apresentar minha trajetória profissional, projetos práticos e habilidades técnicas como desenvolvedor Full Stack. Com design responsivo, interface moderna e foco em experiência do usuário, o projeto é também uma vitrine das minhas decisões técnicas e criativas. Construído com React, styled-components, React Router e conceitos de SEO básico, responsividade e acessibilidade."
   },
   "ProjetoCalculadora": {
-    "descricao": "Calculadora temática criada em dupla, capaz de converter números entre diferentes bases numéricas (decimal, binário, hexadecimal e octal), desenvolvida como desafio acadêmico."
+    "descricao": "Aplicação web que converte números entre as bases decimal, binária, hexadecimal e octal. Desenvolvida em dupla como desafio acadêmico para reforçar lógica de programação, tratamento de entradas e design limpo para facilitar o uso. Utilizando JavaScript puro, foco em estrutura condicional, validação de dados e modularização de funções."
   },
   "ProjetoChat": {
-    "descricao": "Aplicação de chat integrada à API Gemini, permitindo interação com uma inteligência artificial que responde de forma dinâmica e contextualizada."
+    "descricao": "Aplicação de chat conectada à API Gemini, que permite interações com uma inteligência artificial capaz de interpretar o contexto e responder de maneira dinâmica e fluida. Projeto focado em integração de APIs, consumo de dados assíncronos (fetch/axios), experiência do usuário e comunicação natural com IA."
   },
   "ProjetoSistemaVenda": {
-    "descricao": "Sistema backend para gerenciamento de uma loja fictícia, com funcionalidades para controle de estoque, cadastro de produtos e execução de vendas simuladas."
+    "descricao": "Sistema de vendas desenvolvido em Python, com interface gráfica feita em Tkinter e banco de dados SQL. Permite cadastro de produtos, controle de estoque e execução de vendas, aplicando lógica de negócio sólida e operações CRUD completas. O projeto destaca boas práticas em organização de código, manipulação eficiente de dados e criação de uma interface simples e funcional para ambiente desktop."
+  },
+  "ProjetoPonny": {
+    "descricao": "Projeto desenvolvido em dupla utilizando a metodologia de Pair Programming, com foco em colaboração ágil e alternância de papéis entre programador e copiloto. A aplicação simula uma corrida de pôneis com temática lúdica inspirada em 'My Little Pony', integrando funcionalidades como cadastro de ponnies, sistema de apostas, histórico de voltas e alertas personalizados."
   },
   "contato": {
     "titulo": "Vamos Trabalhar Juntos!",

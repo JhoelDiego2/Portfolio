@@ -1,10 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  NavStyled,
-  UlStyled,
-  LiStyled, 
-  Circle, 
-} from './styles';
+import { NavStyled, UlStyled, LiStyled, Circle } from "./styles";
 import { useTranslation } from "react-i18next";
 import AnimatedSidebar from "../Menu";
 
@@ -61,8 +56,13 @@ export default function NavBar({
       $isScrolled={$isScrolled}
     >
       <motion.p initial="hidden" animate="visible" variants={itemVariants}>
-        Jhoel 
-        <Circle as={motion.span} initial="hidden" animate="visible" variants={itemVariants} />
+        Jhoel
+        <Circle
+          as={motion.span}
+          initial="hidden"
+          animate="visible"
+          variants={itemVariants}
+        />
       </motion.p>
 
       <UlStyled as={motion.ul}>
@@ -83,11 +83,11 @@ export default function NavBar({
         ))}
         {children}
       </UlStyled>
-      <AnimatedSidebar 
-            mobileMenuOpen={mobileMenuOpen}
-      setMobileMenuOpen={setMobileMenuOpen}
-      onNavClick={onNavClick}/>
-
+      <AnimatedSidebar
+        mobileMenuOpen={mobileMenuOpen}
+        setMobileMenuOpen={setMobileMenuOpen}
+        onNavClick={onNavClick}
+      />
     </NavStyled>
   );
 }

@@ -1,20 +1,36 @@
 import styled from "styled-components";
 export const Section = styled.section`
-  
   align-items: flex-start;
   span {
     display: flex;
     gap: 15px;
   }
-  padding-top: 70px;
+  padding-top: 120px;
+
   min-height: auto;
+  justify-content: center;
+  @media (min-width: 480px) {
+    padding-top: 70px;
+  }
+  @media (max-width: 800px) {
+    min-height: 100dvh;
+  }
   @media (max-width: 1024px) {
     background: url(${(props) => props.theme.cores.hero});
     background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 100%;
-
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 800px;
+  }
+  @media (min-width: 1000px) {
+    padding-top: 0;
+    min-height: auto;
+  }
+  @media (min-width: 1437px) {
+    padding-top: 0;
+    min-height: auto;
+    min-height: 920px;
   }
 `;
 export const Hero = styled.div`
@@ -24,7 +40,6 @@ export const Hero = styled.div`
   align-items: center;
   flex-direction: column-reverse;
   height: 100%;
-  padding-top: 70px;
   gap: 30px;
   @media (min-width: 1020px) {
     flex-direction: row;
@@ -105,21 +120,19 @@ export const Gradiant = styled.div`
   width: 40%;
   height: 40%;
   background: radial-gradient(
-  circle,
-  #9BFFA5 29%,
-  #AED3FF 47%,
-  #C9D4EF 55%,
-  #D798E1 66%,
-  #CACFFA 82%
-);
-filter: blur(200px);
-z-index: -1;
+    circle,
+    #9bffa5 29%,
+    #aed3ff 47%,
+    #c9d4ef 55%,
+    #d798e1 66%,
+    #cacffa 82%
+  );
+  filter: blur(200px);
+  z-index: -1;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-`
-
+`;
 
 export const StytledDiv = styled.div`
   width: 15%;

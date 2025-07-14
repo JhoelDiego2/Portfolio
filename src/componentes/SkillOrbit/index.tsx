@@ -12,26 +12,19 @@ import git from "../../assets/img/git.png";
 import css from "../../assets/img/css.png";
 import { OrbitContainer, Central, Circle, OrbitItem } from "./styles";
 
-const icons_first = [
-  figmaIcon,
-  photo,
-  git,
-  taiwand,
-  reactIcon,
-  css,
-];
-const icons_second = [,nodeIcon,, pythonIcon];
+const icons_first = [figmaIcon, photo, git, taiwand, reactIcon, css];
+const icons_second = [, nodeIcon, , pythonIcon];
 const icons_third = [java, tsIcon];
 interface ElementsProps {
   lista: string[];
   tamanho: number;
 }
 
-const Elements = ({lista, tamanho}: ElementsProps) => (
+const Elements = ({ lista, tamanho }: ElementsProps) => (
   <>
     {lista.map((icon, index) => {
-      let largura = lista === icons_second? 4: lista.length
-      const angle = (360 / (largura) ) * index;
+      let largura = lista === icons_second ? 4 : lista.length;
+      const angle = (360 / largura) * index;
       return (
         <OrbitItem key={index} angle={angle} tamanho={tamanho}>
           <img src={icon} alt={`icon-${index}`} />
@@ -44,14 +37,14 @@ export function SkillOrbit() {
   return (
     <OrbitContainer>
       <Central src={jsIcon} />
-      <Circle >
-        <Elements lista={icons_first} tamanho={490}/>
+      <Circle>
+        <Elements lista={icons_first} tamanho={255} />
       </Circle>
-      <Circle >
-        <Elements lista={icons_second} tamanho={260}/>
+      <Circle>
+        <Elements lista={icons_second} tamanho={165} />
       </Circle>
-      <Circle >
-        <Elements lista={icons_third} tamanho={120}/>
+      <Circle>
+        <Elements lista={icons_third} tamanho={100} />
       </Circle>
     </OrbitContainer>
   );

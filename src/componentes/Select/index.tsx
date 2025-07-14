@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { Select, Option } from './styles';
-import { useTranslation } from 'react-i18next';
+import { Select, Option } from "./styles";
+import { useTranslation } from "react-i18next";
 
 export function SelectLanguage() {
   const { i18n } = useTranslation();
@@ -11,7 +11,7 @@ export function SelectLanguage() {
   }
 
   return (
-    <Select  onChange={setLanguage} defaultValue={i18n.language}>
+    <Select onChange={setLanguage} defaultValue={i18n.language}>
       <Option value="pt">PT</Option>
       <Option value="en">EN</Option>
       <Option value="es">ES</Option>

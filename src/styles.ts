@@ -1,6 +1,10 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const EstiloGlobal = createGlobalStyle`
+  html{
+    width: 100vw;
+    overflow-x: hidden;
+  }
   body {
     /* width: 100vw; */
       @media (min-width: 1025px) {
@@ -18,6 +22,8 @@ const EstiloGlobal = createGlobalStyle`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+      height: 100%;
   }
   * {
     transition: 0.3s ease-in-out;
@@ -32,6 +38,7 @@ const EstiloGlobal = createGlobalStyle`
   }
 
   section{
+    /* border: solid 1px red; */
     /* min-height: 100dvb; */
     width: 100vw;
     font-size: 1.2rem;
@@ -47,20 +54,18 @@ const EstiloGlobal = createGlobalStyle`
     max-width: 1024px;
   }
     @media (min-width: 1440px) {
-    max-height: 854px;
+    min-height: 920px;
+    /* max-height: 854px; */
     max-width: 1440px;
     width: 1440px;
-
+justify-content: flex-start;
     }
   };
   p{
+    font-size: 16px;
     font-size: clamp(1rem, 4%, 3rem);
   }
-  @media (min-width: 1440px) {
-  p{
-    font-size: clamp(1.5rem, 4%, 3rem);
-  }
-  }
+
   a{
     text-decoration: none;
   }
@@ -75,9 +80,6 @@ const EstiloGlobal = createGlobalStyle`
   ::-webkit-scrollbar-thumb {
      background-color: ${({ theme }) => theme.cores.menu}; 
       border-radius: 10px;
-  }
-  #habilidades{
-    display: none;
   }
 `;
 export default EstiloGlobal;

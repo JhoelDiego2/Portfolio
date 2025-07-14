@@ -10,7 +10,7 @@
   "hero": {
     "linha1": "Hello!",
     "linha2": "I'm Jhoel",
-    "linha3": "FULLSTACK WEB DEVELOPER",
+    "linha3": "_FULLSTACK WEB DEVELOPER",
     "linha4": "Specialist in turning challenges into digital solutions. I combine design, logic, and performance to build functional applications. Great ideas deserve quality execution."
   },
   "menu_opcoes": {
@@ -38,22 +38,25 @@
     "botao4": "Learn More"
   },
   "ProjetoShadow": {
-    "descricao": "Project developed during the first year of college that promotes the fandom of a Chinese series through interactive games, chats, and customized statistics for fans."
+    "descricao": "An immersive experience created for passionate fans! Inspired by a Chinese series, this project combines interactive games, real-time chats, and personalized dashboards, increasing user engagement. Developed as a multidisciplinary academic challenge, applying knowledge in Front-end (CSS), Back-end (Node.js), Database (MySQL), and UX/UI Design."
   },
   "ProjetoLofhel": {
-    "descricao": "Smart system for wine storage monitoring, controlling humidity and temperature to ensure ideal preservation."
+    "descricao": "Intelligent wine monitoring system that uses IoT sensors to track humidity and temperature in real-time, ensuring optimal product preservation during storage. The solution was developed focusing on automation, Internet of Things (IoT), and energy efficiency, using Arduino, DHT11 sensors, dashboards with charts (Chart.js), and a database for historical data."
   },
   "ProjetoPortfolio": {
-    "descricao": "Personal portfolio showcasing my projects, skills, and journey as a Full Stack Developer."
+    "descricao": "Website developed to showcase my professional journey, practical projects, and technical skills as a Full Stack developer. With responsive design, modern interface, and focus on user experience, the project is also a showcase of my technical and creative decisions. Built with React, styled-components, React Router, and basic SEO, responsiveness, and accessibility concepts."
   },
   "ProjetoCalculadora": {
-    "descricao": "Themed calculator developed in pairs, capable of converting numbers between different numerical bases (decimal, binary, hexadecimal, and octal), created as an academic challenge."
+    "descricao": "Web application that converts numbers between decimal, binary, hexadecimal, and octal bases. Developed in pairs as an academic challenge to reinforce programming logic, input handling, and clean design for ease of use. Using pure JavaScript, focusing on conditional structures, data validation, and function modularization."
   },
   "ProjetoChat": {
-    "descricao": "Chat application integrated with the Gemini API, allowing interaction with an AI that responds dynamically and contextually."
+    "descricao": "Chat application connected to the Gemini API, allowing interactions with an artificial intelligence capable of interpreting context and responding dynamically and fluently. Project focused on API integration, asynchronous data consumption (fetch/axios), user experience, and natural AI communication."
   },
   "ProjetoSistemaVenda": {
-    "descricao": "Backend system for managing a fictional store, with features for inventory control, product registration, and simulated sales."
+    "descricao": "Sales system developed in Python, with graphical interface made in Tkinter and SQL database. Allows product registration, inventory control, and sales execution, applying solid business logic and complete CRUD operations. The project highlights best practices in code organization, efficient data handling, and creation of a simple and functional desktop interface."
+  },
+  "ProjetoPonny": {
+    "description": "Project developed in a pair using the Pair Programming methodology, focusing on agile collaboration and role switching between driver and navigator. The application simulates a pony race with a playful theme inspired by 'My Little Pony', integrating features such as user registration, betting system, lap history, and custom alerts."
   },
   "contato": {
     "titulo": "Let's Work Together!",

@@ -3,7 +3,7 @@ import { Icone } from "./styles";
 
 type IconeHeroProps = {
   nome: string;
-  links:string;
+  links: string;
 };
 
 export function IconeHero({ nome, links }: IconeHeroProps) {

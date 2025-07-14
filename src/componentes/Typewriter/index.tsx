@@ -7,17 +7,17 @@ interface TypewriterProps {
 }
 
 export function Typewriter({ text, speed = 50 }: TypewriterProps) {
-    const { t } = useTranslation();
-    const texto = t(text)
+  const { t } = useTranslation();
+  const texto = t(text);
   const [displayedText, setDisplayedText] = useState("");
 
   useEffect(() => {
-    setDisplayedText(""); 
-    let i = -1;
+    setDisplayedText("");
+    let i = 0;
     const interval = setInterval(() => {
       setDisplayedText((prev) => prev + texto[i]);
       i++;
-      if (i === (texto.length -1)) clearInterval(interval);
+      if (i === texto.length - 1) clearInterval(interval);
     }, speed);
 
     return () => clearInterval(interval);
@@ -25,13 +25,13 @@ export function Typewriter({ text, speed = 50 }: TypewriterProps) {
 
   return (
     <>
-    <motion.span
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 0.5 }}
-    >
-      {displayedText}
-    </motion.span>
+      <motion.span
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        {displayedText}
+      </motion.span>
     </>
   );
 }

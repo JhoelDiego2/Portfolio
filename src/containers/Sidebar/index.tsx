@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import NavBar from "../../componentes/NavBar";
 import ButtomTheme from "../../componentes/ButtomTheme";
 import { SelectLanguage } from "../../componentes/Select";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 type HeaderProps = {
   toggleTema: () => void;
 };
@@ -17,7 +17,13 @@ export default function Header({ toggleTema }: HeaderProps) {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
 
-      const sections = ["inicio", "habilidades", "projetos", "idiomas", "contato"];
+      const sections = [
+        "inicio",
+        "habilidades",
+        "projetos",
+        "idiomas",
+        "contato",
+      ];
       for (const section of sections) {
         const element = document.getElementById(section);
         if (element) {
@@ -40,7 +46,7 @@ export default function Header({ toggleTema }: HeaderProps) {
     if (element) {
       window.scrollTo({
         top: element.offsetTop - 80,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };

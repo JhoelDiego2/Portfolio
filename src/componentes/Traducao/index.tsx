@@ -6,5 +6,5 @@ interface TextProps {
 
 export function Traducao({ tKey, ...rest }: TextProps) {
   const { t } = useTranslation();
-  return <>{t(tKey)}</>
+  return <>{t(tKey)}</>;
 }

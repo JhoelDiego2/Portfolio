@@ -23,10 +23,10 @@ export const Floating_element = styled.div`
 export const Inner_circulo = styled.div<FlutuanteProps>`
   width: 200px;
   height: 200px;
-  background: ${props=>props.theme.cores.menu};
-  filter: ${props => props.filter? 'blur(6px)':'blur(0px)'};
+  background: ${(props) => props.theme.cores.menu};
+  filter: ${(props) => (props.filter ? "blur(6px)" : "blur(0px)")};
   border-radius: 50%;
-  border-radius: ${props => props.circle? '50%':'10%'};
+  border-radius: ${(props) => (props.circle ? "50%" : "10%")};
   width: 93%;
   height: 93%;
   @media (max-width: 500px) {
