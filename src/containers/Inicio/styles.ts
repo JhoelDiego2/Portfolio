@@ -6,17 +6,15 @@ export const Section = styled.section`
     gap: 15px;
   }
   padding-top: 120px;
-  
-  min-height: auto;
-    justify-content: center;
-    @media (min-width: 480px) {
-  padding-top: 70px;
 
-    }
-@media (max-width: 800px)  {
+  min-height: auto;
+  justify-content: center;
+  @media (min-width: 480px) {
+    padding-top: 70px;
+  }
+  @media (max-width: 800px) {
     min-height: 100dvh;
-  
-}
+  }
   @media (max-width: 1024px) {
     background: url(${(props) => props.theme.cores.hero});
     background-position: center;
@@ -24,17 +22,16 @@ export const Section = styled.section`
     background-repeat: no-repeat;
     background-size: 100%;
     min-height: 800px;
-
   }
-   @media (min-width: 1000px) {
+  @media (min-width: 1000px) {
     padding-top: 0;
     min-height: auto;
-   }
-      @media (min-width: 1437px) {
+  }
+  @media (min-width: 1437px) {
     padding-top: 0;
     min-height: auto;
     min-height: 920px;
-   }
+  }
 `;
 export const Hero = styled.div`
   display: flex;

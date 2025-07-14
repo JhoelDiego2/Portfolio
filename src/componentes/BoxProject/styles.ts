@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 0px auto;
@@ -6,10 +6,8 @@ export const Container = styled.div`
   width: 100%;
   @media (min-width: 800px) {
     padding-inline: clamp(1rem, 5vw, 6rem);
-  
   }
-
-`
+`;
 
 export const CardContainer = styled.div`
   overflow: hidden;
@@ -22,14 +20,13 @@ export const CardContainer = styled.div`
   /* flex-wrap: wrap; */
   padding: 0 5px;
   align-items: flex-end;
-    gap: 15px;
+  gap: 15px;
 
   @media (min-width: 1000px) {
-    
     gap: 35px;
     min-height: 440px;
   }
-`
+`;
 
 export const Splash = styled.div`
   position: absolute;
@@ -37,18 +34,16 @@ export const Splash = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(306deg,  #3d413edc 30%, #0fbab2ff 100%);
-  background: linear-gradient(306deg,  #3d413e28 30%, #62d2ccff 100%);
+  background: linear-gradient(306deg, #3d413edc 30%, #0fbab2ff 100%);
+  background: linear-gradient(306deg, #3d413e28 30%, #62d2ccff 100%);
   border-radius: 20px;
-      @media (min-width: 900px) {
-  top: 80px;
-
-      }
-            @media (min-width: 1000px) {
-  top: 140px;
-
-      }
-`
+  @media (min-width: 900px) {
+    top: 80px;
+  }
+  @media (min-width: 1000px) {
+    top: 140px;
+  }
+`;
 
 export const CardContent = styled.div`
   display: flex;
@@ -56,23 +51,22 @@ export const CardContent = styled.div`
   gap: 40px;
   z-index: 10;
   position: relative;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
   padding: 10px 10px;
   /* width: 100%; */
   /* background-color: green; */
   @media (min-width: 1000px) {
-    
     padding: 70px 20px;
-}
-`
+  }
+`;
 
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: 100%;
-  div{
+  div {
     display: flex;
     flex-wrap: wrap;
     /* background-color: red; */
@@ -81,40 +75,39 @@ export const ProjectInfo = styled.div`
     row-gap: 10px;
   }
   @media (min-width: 900px) {
-  max-width: 300px;
+    max-width: 300px;
   }
-    @media (min-width: 1000px) {
-  max-width: 400px;
+  @media (min-width: 1000px) {
+    max-width: 400px;
   }
-`
+`;
 
 export const ProjectTitle = styled.h2`
   font-size: 32px;
   font-weight: 700;
-  color: #1f2937; 
+  color: #1f2937;
 
   width: 100%;
   text-align: center;
-`
+`;
 
 export const ProjectDescription = styled.p`
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  color: #000000ff; 
-
-`
+  color: #000000ff;
+`;
 
 export const Tag = styled.span`
   display: inline-block;
   padding: 4px 12px;
   margin-right: 8px;
   border-radius: 10px;
-  background-color: #f3f4f6; 
-  color: #111827; 
+  background-color: #f3f4f6;
+  color: #111827;
   font-size: 14px;
   font-weight: 500;
-`
+`;
 
 export const ProjectImage = styled.img`
   width: 400px;
@@ -122,14 +115,14 @@ export const ProjectImage = styled.img`
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   object-fit: cover;
-`
+`;
 
 export const ButtonGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: 16px;
-`
+`;
 
 export const Button = styled.a`
   padding: 10px 18px;
@@ -142,17 +135,17 @@ export const Button = styled.a`
   transition: background-color 0.2s;
 
   &:hover {
-    background-color: #0284c7; 
+    background-color: #0284c7;
   }
 
   &.secondary {
-    background-color: #4b5563; 
+    background-color: #4b5563;
 
     &:hover {
       background-color: #374151;
     }
   }
-`
+`;
 export const Card = styled.div`
   width: 95%;
   height: auto;
@@ -160,11 +153,10 @@ export const Card = styled.div`
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.65);
   transition: transform 0.3s ease;
   img:hover {
-    transform: scale(1.02) ;
-
-  };
-  img{
-  width: 100%;
+    transform: scale(1.02);
+  }
+  img {
+    width: 100%;
   }
   @media (max-width: 393px) {
     height: 400px;
@@ -173,11 +165,11 @@ export const Card = styled.div`
 
   background-color: black;
   @media (min-width: 687px) {
-  width: 400px;
-    
+    width: 400px;
+
     height: 630px;
   }
-`
+`;
 export const CardMobile = styled.div`
   width: 200px;
   height: auto;
@@ -185,23 +177,23 @@ export const CardMobile = styled.div`
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.65);
 
   transition: transform 0.3s ease;
-  img{
+  img {
     width: 200px;
   }
   img:hover {
     transform: scale(1.02);
-  };
+  }
   height: 630px;
   background-color: black;
   overflow: hidden;
   display: none;
-    @media (min-width: 695px) {
+  @media (min-width: 695px) {
     display: block;
   }
-    @media (min-width: 900px) {
+  @media (min-width: 900px) {
     display: none;
   }
-      @media (min-width: 1000px) {
+  @media (min-width: 1000px) {
     display: block;
   }
-`
+`;

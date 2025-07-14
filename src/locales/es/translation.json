@@ -55,8 +55,8 @@
   "ProjetoSistemaVenda": {
     "descricao": "Sistema de ventas desarrollado en Python, con interfaz gráfica hecha en Tkinter y base de datos SQL. Permite registro de productos, control de inventario y ejecución de ventas, aplicando lógica de negocio sólida y operaciones CRUD completas. El proyecto destaca buenas prácticas en organización de código, manejo eficiente de datos y creación de una interfaz simple y funcional para entorno de escritorio."
   },
-    "ProjetoPonny": {
-   "descripcion": "Proyecto desarrollado en pareja utilizando la metodología de Pair Programming, con enfoque en colaboración ágil y rotación de roles entre programador y copiloto. La aplicación simula una carrera de ponis con temática lúdica inspirada en 'My Little Pony', integrando funcionalidades como registro de usuarios, sistema de apuestas, historial de vueltas y alertas personalizadas."
+  "ProjetoPonny": {
+    "descripcion": "Proyecto desarrollado en pareja utilizando la metodología de Pair Programming, con enfoque en colaboración ágil y rotación de roles entre programador y copiloto. La aplicación simula una carrera de ponis con temática lúdica inspirada en 'My Little Pony', integrando funcionalidades como registro de usuarios, sistema de apuestas, historial de vueltas y alertas personalizadas."
   },
   "contato": {
     "titulo": "¡Trabajemos Juntos!",

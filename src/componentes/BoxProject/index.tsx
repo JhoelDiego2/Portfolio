@@ -1,6 +1,6 @@
-import * as motion from "motion/react-client"
+import * as motion from "motion/react-client";
 import { Traducao } from "../../componentes/Traducao";
-import type { Variants } from "motion/react"
+import type { Variants } from "motion/react";
 import {
   CardContainer,
   Container,
@@ -15,16 +15,16 @@ import {
   Button,
   Card,
   CardMobile,
-} from "./styles"
+} from "./styles";
 
 interface CardProps {
-  photo: string
-  photo_mobile: string
-  projectName: string
-  description: string
-  url: string
-  repository: string
-  tags?: string[] 
+  photo: string;
+  photo_mobile: string;
+  projectName: string;
+  description: string;
+  url: string;
+  repository: string;
+  tags?: string[];
 }
 
 export default function ScrollTriggered({
@@ -34,8 +34,8 @@ export default function ScrollTriggered({
   description,
   url,
   repository,
-//   album,
-  tags = ["Javascript", "CSS"], 
+  //   album,
+  tags = ["Javascript", "CSS"],
 }: CardProps) {
   return (
     <Container>
@@ -50,7 +50,7 @@ export default function ScrollTriggered({
         tags={tags}
       />
     </Container>
-  )
+  );
 }
 
 function CardComponent({
@@ -60,7 +60,7 @@ function CardComponent({
   description,
   url,
   repository,
-//   album,
+  //   album,
   tags,
 }: CardProps & { tags: string[] }) {
   return (
@@ -82,29 +82,31 @@ function CardComponent({
           </div>
 
           <ProjectDescription>
-            <Traducao tKey={description}/>
-
+            <Traducao tKey={description} />
           </ProjectDescription>
 
           <ButtonGroup>
             {/* <Button href={album} target="_blank">Ver imagens ↗</Button> */}
-            <Button href={url} target="_blank">Acessar site ↗</Button>
+            <Button href={url} target="_blank">
+              Acessar site ↗
+            </Button>
             <Button href={repository} target="_blank" className="secondary">
               Acessar Repositório ↗
             </Button>
           </ButtonGroup>
         </ProjectInfo>
-
       </CardContent>
-        <Card as={motion.div} variants={cardVariants}>
-          <ProjectImage src={photo} alt={`Imagem do projeto ${projectName}`} />
-        </Card>
-        <CardMobile as={motion.div} variants={cardVariantsMobile}>
-          <ProjectImage src={photo_mobile} alt={`Imagem do projeto ${projectName}`} />
-
-        </CardMobile>
+      <Card as={motion.div} variants={cardVariants}>
+        <ProjectImage src={photo} alt={`Imagem do projeto ${projectName}`} />
+      </Card>
+      <CardMobile as={motion.div} variants={cardVariantsMobile}>
+        <ProjectImage
+          src={photo_mobile}
+          alt={`Imagem do projeto ${projectName}`}
+        />
+      </CardMobile>
     </CardContainer>
-  )
+  );
 }
 
 const cardVariants: Variants = {
@@ -120,7 +122,7 @@ const cardVariants: Variants = {
       duration: 0.3,
     },
   },
-}
+};
 const cardVariantsMobile: Variants = {
   offscreen: {
     y: 300,
@@ -134,4 +136,4 @@ const cardVariantsMobile: Variants = {
       duration: 0.3,
     },
   },
-}
+};

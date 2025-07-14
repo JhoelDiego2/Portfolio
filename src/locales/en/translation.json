@@ -55,8 +55,8 @@
   "ProjetoSistemaVenda": {
     "descricao": "Sales system developed in Python, with graphical interface made in Tkinter and SQL database. Allows product registration, inventory control, and sales execution, applying solid business logic and complete CRUD operations. The project highlights best practices in code organization, efficient data handling, and creation of a simple and functional desktop interface."
   },
-    "ProjetoPonny": {
-"description": "Project developed in a pair using the Pair Programming methodology, focusing on agile collaboration and role switching between driver and navigator. The application simulates a pony race with a playful theme inspired by 'My Little Pony', integrating features such as user registration, betting system, lap history, and custom alerts."
+  "ProjetoPonny": {
+    "description": "Project developed in a pair using the Pair Programming methodology, focusing on agile collaboration and role switching between driver and navigator. The application simulates a pony race with a playful theme inspired by 'My Little Pony', integrating features such as user registration, betting system, lap history, and custom alerts."
   },
   "contato": {
     "titulo": "Let's Work Together!",

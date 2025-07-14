@@ -62,8 +62,8 @@ justify-content: flex-start;
     }
   };
   p{
-    font-size: clamp(1rem, 4%, 3rem);
     font-size: 16px;
+    font-size: clamp(1rem, 4%, 3rem);
   }
 
   a{

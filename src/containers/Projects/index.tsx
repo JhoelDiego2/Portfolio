@@ -55,8 +55,8 @@ export function Projects() {
           photo_mobile={portafolio_mobile}
           projectName="Portfólio"
           description="ProjetoPortfolio.descricao"
-          url="https://lofhel.vercel.app/"
-          repository="https://github.com/JhoelDiego2/LOFHEL.git"
+          url="https://portfolio-eight-olive-78.vercel.app/"
+          repository="https://github.com/JhoelDiego2/Portfolio.git"
           // album="https://drive.google.com/drive/shadow-slave"
           tags={[
             "React",
@@ -71,8 +71,8 @@ export function Projects() {
           photo_mobile={sptech_mobile}
           projectName="Calculadora sptech"
           description="ProjetoCalculadora.descricao"
-          url="https://lofhel.vercel.app/"
-          repository="https://github.com/JhoelDiego2/LOFHEL.git"
+          url="https://calculadora-diferentes-bases.vercel.app/"
+          repository="https://github.com/JhoelDiego2/Calculadora-diferentes-bases.git"
           // album="https://drive.google.com/drive/shadow-slave"
           tags={["Javascript", "Css", "Html", "DOM"]}
         />
@@ -81,8 +81,8 @@ export function Projects() {
           photo_mobile={gemini_mobile}
           projectName="Chat Gemini"
           description="ProjetoChat.descricao"
-          url="https://lofhel.vercel.app/"
-          repository="https://github.com/JhoelDiego2/LOFHEL.git"
+          url="https://gemini-ia-chat.vercel.app/"
+          repository="https://github.com/JhoelDiego2/Gemini-IA-Chat.git"
           // album="https://drive.google.com/drive/shadow-slave"
           tags={["Javascript", "Css", "Node", "Gemini API"]}
         />
@@ -91,8 +91,8 @@ export function Projects() {
           photo_mobile={mita_mobile}
           projectName="Mita Control"
           description="ProjetoSistemaVenda.descricao"
-          url="https://lofhel.vercel.app/"
-          repository="https://github.com/JhoelDiego2/LOFHEL.git"
+          url="https://github.com/JhoelDiego2/Mita_Control.git"
+          repository="https://github.com/JhoelDiego2/Mita_Control.git"
           // album="https://drive.google.com/drive/shadow-slave"
           tags={["Python", "MySql", "CRUD", "Tkinter"]}
         />
@@ -101,8 +101,8 @@ export function Projects() {
           photo_mobile={ponny_mobile}
           projectName="My litle Ponny"
           description="ProjetoPonny.descricao"
-          url="https://lofhel.vercel.app/"
-          repository="https://github.com/JhoelDiego2/LOFHEL.git"
+          url="https://extreme-go-horse-sepia.vercel.app/"
+          repository="https://github.com/JhoelDiego2/ExtremeGoHorse.git"
           // album="https://drive.google.com/drive/shadow-slave"
           tags={["Python", "MySql", "CRUD", "Tkinter"]}
         />
