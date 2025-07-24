@@ -63,11 +63,13 @@ export const OrbitItem = styled.div<{ angle: number; tamanho: number }>`
   transform: rotate(${(props) => props.angle}deg)
     translate(${(props) => props.tamanho}%)
     rotate(-${(props) => props.angle}deg);
-  img {
-    width: 100%;
+   
+
+    img {
+      width: 100%;
+      animation: noSpin 100s linear infinite;
     height: auto;
     border-radius: 50%;
-    animation: noSpin 100s linear infinite;
     object-fit: cover;
   }
   @keyframes noSpin {

@@ -15,7 +15,8 @@ export function Typewriter({ text, speed = 50 }: TypewriterProps) {
     setDisplayedText("");
     let i = 0;
     const interval = setInterval(() => {
-      setDisplayedText((prev) => prev + texto[i]);
+      if (texto[i] !== '_') setDisplayedText((prev) => prev + texto[i]);
+      else setDisplayedText((prev) => prev + texto[i]);
       i++;
       if (i === texto.length - 1) clearInterval(interval);
     }, speed);

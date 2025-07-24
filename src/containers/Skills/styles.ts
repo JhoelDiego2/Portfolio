@@ -8,15 +8,15 @@ export const Container = styled.div`
   flex-direction: column-reverse;
   height: 100%;
   gap: 30px;
-  @media (min-width: 1020px) {
+  @media (min-width: 740px) {
     flex-direction: row;
     width: 100%;
     padding-inline: clamp(0.1rem, 3vw, 6rem);
   }
-  @media (min-width: 1025px) {
+  @media (min-width: 740px) {
     font-size: clamp(2rem, 5%, 3rem);
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 740px) {
     flex-wrap: nowrap;
   }
 `;

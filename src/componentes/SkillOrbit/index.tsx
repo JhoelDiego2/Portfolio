@@ -27,7 +27,7 @@ const Elements = ({ lista, tamanho }: ElementsProps) => (
       const angle = (360 / largura) * index;
       return (
         <OrbitItem key={index} angle={angle} tamanho={tamanho}>
-          <img src={icon} alt={`icon-${index}`} />
+          <img src={icon} alt={`icon-${index}`} loading="lazy"/>
         </OrbitItem>
       );
     })}
@@ -35,8 +35,8 @@ const Elements = ({ lista, tamanho }: ElementsProps) => (
 );
 export function SkillOrbit() {
   return (
-    <OrbitContainer>
-      <Central src={jsIcon} />
+    <OrbitContainer >
+      <Central src={jsIcon} loading="lazy" />
       <Circle>
         <Elements lista={icons_first} tamanho={255} />
       </Circle>

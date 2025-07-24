@@ -17,12 +17,13 @@ export const CardContainer = styled.div`
   position: relative;
   padding-top: 20px;
   margin-bottom: 40px;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   padding: 0 5px;
   align-items: flex-end;
   gap: 15px;
 
   @media (min-width: 1000px) {
+  flex-wrap: nowrap;
     gap: 35px;
     min-height: 440px;
   }
@@ -37,10 +38,16 @@ export const Splash = styled.div`
   background: linear-gradient(306deg, #3d413edc 30%, #0fbab2ff 100%);
   background: linear-gradient(306deg, #3d413e28 30%, #62d2ccff 100%);
   border-radius: 20px;
+    @media (min-width: 745px) {
+    top: 60px;
+  }
   @media (min-width: 900px) {
     top: 80px;
   }
   @media (min-width: 1000px) {
+    top: 40px;
+  }
+  @media (min-width: 1468px) {
     top: 140px;
   }
 `;
@@ -74,7 +81,13 @@ export const ProjectInfo = styled.div`
     justify-content: center;
     row-gap: 10px;
   }
+    @media (min-width: 745px) {
+    max-width: 270px;
+  }
   @media (min-width: 900px) {
+    max-width: 290px;
+  }
+    @media (min-width: 940px) {
     max-width: 300px;
   }
   @media (min-width: 1000px) {
@@ -164,10 +177,45 @@ export const Card = styled.div`
   }
 
   background-color: black;
+  @media (min-width: 371px) {
+  /* width: 400px; */
+
+  height: 460px;
+}
+  @media (min-width: 390px) {
+  /* width: 400px; */
+
+  height: 500px;
+}
+  @media (min-width: 520px) {
+  /* width: 400px; */
+
+  height: 600px;
+}
   @media (min-width: 687px) {
     width: 400px;
 
     height: 630px;
+  }
+    /* @media (min-width: 767p) and (max-width: ;) {
+    width: 400px;
+
+    height:800px;
+  } */
+    @media (min-width: 745px) {
+        width: 350px;
+
+    height: 580px;
+    }
+        @media (min-width: 800px) {
+        width: 340px;
+
+    height: 580px;
+    }
+      @media (min-width: 900px) {
+    width: 400px;
+
+    height: 640px;;
   }
 `;
 export const CardMobile = styled.div`
@@ -190,10 +238,11 @@ export const CardMobile = styled.div`
   @media (min-width: 695px) {
     display: block;
   }
-  @media (min-width: 900px) {
+  @media (min-width: 745px) {
     display: none;
   }
   @media (min-width: 1000px) {
     display: block;
+  height: auto;
   }
 `;
