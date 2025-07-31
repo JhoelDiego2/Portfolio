@@ -81,5 +81,9 @@ justify-content: flex-start;
      background-color: ${({ theme }) => theme.cores.menu}; 
       border-radius: 10px;
   }
+  .active{
+    color: ${({ theme }) => theme.cores.menu}; 
+    font-weight: 300;
+  }
 `;
 export default EstiloGlobal;

@@ -34,7 +34,7 @@ export function Skills() {
 
   return (
     <section id="habilidades">
-      <TituloSub titulo={true} justify="center">
+      <TituloSub titulo={true} justify="center" className="skills-title">
         <Traducao tKey="nav.habilidades" />
       </TituloSub>
       <Container>

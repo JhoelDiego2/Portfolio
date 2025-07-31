@@ -25,6 +25,7 @@ interface CardProps {
   url: string;
   repository: string;
   tags?: string[];
+  clasName?: string;
 }
 
 export default function ScrollTriggered({
@@ -34,6 +35,7 @@ export default function ScrollTriggered({
   description,
   url,
   repository,
+  clasName,
   //   album,
   tags = ["Javascript", "CSS"],
 }: CardProps) {
@@ -41,6 +43,7 @@ export default function ScrollTriggered({
     <Container>
       <CardComponent
         photo={photo}
+       clasName={clasName}
         photo_mobile={photo_mobile}
         projectName={projectName}
         description={description}
@@ -60,6 +63,7 @@ function CardComponent({
   description,
   url,
   repository,
+  clasName,
   //   album,
   tags,
 }: CardProps & { tags: string[] }) {
@@ -69,6 +73,7 @@ function CardComponent({
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ amount: 0.8 }}
+      className={clasName}
     >
       <Splash />
       <CardContent>
@@ -97,13 +102,13 @@ function CardComponent({
         </ProjectInfo>
       </CardContent>
       <Card as={motion.div} variants={cardVariants}>
-        <ProjectImage src={photo} alt={`Imagem do projeto ${projectName}`} />
+        <ProjectImage src={photo} alt={`Imagem do projeto ${projectName}`} loading="lazy"/>
       </Card>
       <CardMobile as={motion.div} variants={cardVariantsMobile}>
         <ProjectImage
           src={photo_mobile}
           alt={`Imagem do projeto ${projectName}`}
-        />
+          loading="lazy"/>
       </CardMobile>
     </CardContainer>
   );

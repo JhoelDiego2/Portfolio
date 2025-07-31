@@ -12,6 +12,9 @@ export const Section = styled.section`
   @media (min-width: 480px) {
     padding-top: 70px;
   }
+    @media (min-width: 570px) {
+    padding-top: 140px;
+  }
   @media (max-width: 800px) {
     min-height: 100dvh;
   }
@@ -23,7 +26,7 @@ export const Section = styled.section`
     background-size: 100%;
     min-height: 800px;
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 749px) {
     padding-top: 0;
     min-height: auto;
   }
@@ -41,12 +44,12 @@ export const Hero = styled.div`
   flex-direction: column-reverse;
   height: 100%;
   gap: 30px;
-  @media (min-width: 1020px) {
+  @media (min-width: 740px) {
     flex-direction: row;
     width: 100%;
     padding-inline: clamp(0.1rem, 3vw, 6rem);
   }
-  @media (min-width: 1025px) {
+  @media (min-width: 740px) {
     font-size: clamp(2rem, 5%, 3rem);
     padding-top: 14%;
   }
@@ -61,10 +64,11 @@ export const Content = styled.div`
     width: 90%;
     /* padding: 0vh  clamp(0.1rem, 3vw, 6rem); */
   }
-  @media (min-width: 1000px) {
+  @media (min-width: 740px) {
     width: 50%;
   }
-  @media (min-width: 1025px) {
+  /* @media (min-width: 1025px) { */
+  @media (min-width: 740px) {
     padding-bottom: 5%;
   }
 `;
@@ -86,10 +90,10 @@ export const Image = styled.div`
   @media (min-width: 650px) {
     width: 60%;
   }
-  @media (min-width: 800px) {
+  @media (min-width: 740px) {
     width: 40%;
   }
-  @media (min-width: 1025px) {
+  @media (min-width: 1000px) {
     width: 30%;
   }
   img {

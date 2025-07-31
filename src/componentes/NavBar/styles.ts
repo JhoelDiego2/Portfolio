@@ -48,6 +48,9 @@ export const LiStyled = styled.li`
     transition: 0.5s ease-in-out;
     opacity: 0;
   }
+  &:hover{
+    color: ${(props) => props.theme.cores.menu};
+  }
   &:hover::after {
     width: 100%;
     opacity: 1;
