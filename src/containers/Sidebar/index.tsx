@@ -21,8 +21,6 @@ export default function Header({ toggleTema }: HeaderProps) {
         "inicio",
         "habilidades",
         "projetos",
-        "idiomas",
-        "contato",
       ];
       for (const section of sections) {
         const element = document.getElementById(section);

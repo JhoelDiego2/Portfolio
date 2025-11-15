@@ -43,8 +43,6 @@ export default function NavBar({
     { id: "inicio", label: t("nav.inicio") },
     { id: "habilidades", label: t("nav.habilidades") },
     { id: "projetos", label: t("nav.projetos") },
-    { id: "idiomas", label: t("nav.idiomas") },
-    { id: "contato", label: t("nav.contato") },
   ];
 
   return (
